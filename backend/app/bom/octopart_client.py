@@ -50,6 +50,34 @@ query SearchByMpn($mpn: String!) {
           value
           units
         }
+        similarParts {
+            mpn
+            octopartUrl
+            manufacturer {
+                name
+            }
+            shortDescription
+            specs {
+                attribute {
+                    name
+                }
+                value
+                units
+            }
+            sellers(authorizedOnly: true) {
+                company {
+                    name
+                }
+                offers {
+                    inventoryLevel
+                    prices {
+                        price
+                        quantity
+                        currency
+                    }
+                }
+            }
+        }
         sellers(authorizedOnly: true) {
           company {
             name

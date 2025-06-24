@@ -95,6 +95,1103 @@
       "units": ""
     }
   ],
+  "similarParts": [
+    {
+      "mpn": "NFC-DATALOGGER-EVM",
+      "octopartUrl": "https://octopart.com/nfc-datalogger-evm-texas+instruments-71502459",
+      "manufacturer": {
+        "name": "Texas Instruments"
+      },
+      "shortDescription": "Ultralow Power Multi-sensor Data Logger with NFC Interface Evaluation Module",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "Module",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Evaluation Kit"
+          },
+          "value": "Yes",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Frequency"
+          },
+          "value": "13.56",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Lifecycle Status"
+          },
+          "value": "Production",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Manufacturer Lifecycle Status"
+          },
+          "value": "ACTIVE",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Number of Pins"
+          },
+          "value": "0",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Non-Compliant",
+          "units": ""
+        }
+      ],
+      "sellers": [
+        {
+          "company": {
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 1,
+              "prices": [
+                {
+                  "price": 58.8,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 58.8,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 58.8,
+                  "quantity": 50,
+                  "currency": "USD"
+                },
+                {
+                  "price": 58.8,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 58.8,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 58.8,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Texas Instruments"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 52,
+              "prices": [
+                {
+                  "price": 49,
+                  "quantity": 1,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "DigiKey"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 1,
+              "prices": [
+                {
+                  "price": 58.8,
+                  "quantity": 1,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Arrow Electronics"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 55.47,
+                  "quantity": 1,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mpn": "430BOOST-CC110L",
+      "octopartUrl": "https://octopart.com/430boost-cc110l-texas+instruments-21329276",
+      "manufacturer": {
+        "name": "Texas Instruments"
+      },
+      "shortDescription": "Rf Wireless Boosterpack Kit For MSP-EXP430G2 Launchpad - More Details",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "Module",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Core Architecture"
+          },
+          "value": "MSP430",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Evaluation Kit"
+          },
+          "value": "Yes",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Frequency"
+          },
+          "value": "915",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Interface"
+          },
+          "value": "SPI",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Lifecycle Status"
+          },
+          "value": "Production",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Manufacturer Lifecycle Status"
+          },
+          "value": "ACTIVE",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "85",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-40",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Number of Pins"
+          },
+          "value": "0",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Operating Supply Voltage"
+          },
+          "value": "3.6",
+          "units": "V"
+        },
+        {
+          "attribute": {
+            "name": "REACH SVHC"
+          },
+          "value": "No",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "units": ""
+        }
+      ],
+      "sellers": []
+    },
+    {
+      "mpn": "BB600",
+      "octopartUrl": "https://octopart.com/bb600-laird-65061627",
+      "manufacturer": {
+        "name": "Laird"
+      },
+      "shortDescription": "Breakout Board, Single-Mode Bluetooth Rohs Compliant: Yes",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "Module",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Evaluation Kit"
+          },
+          "value": "Yes",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Frequency"
+          },
+          "value": "2.4",
+          "units": "GHz"
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "units": ""
+        }
+      ],
+      "sellers": [
+        {
+          "company": {
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 15.9,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 15.9,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 15.9,
+                  "quantity": 50,
+                  "currency": "USD"
+                },
+                {
+                  "price": 15.9,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 15.9,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 15.9,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Farnell"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 10.28,
+                  "quantity": 1,
+                  "currency": "GBP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mpn": "MRF24J40MB-I/RM",
+      "octopartUrl": "https://octopart.com/mrf24j40mb-i%2Frm-microchip-10783095",
+      "manufacturer": {
+        "name": "Microchip"
+      },
+      "shortDescription": "RF Transceiver O-QPSK 3.3V 12-Pin SMD Tray",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "Module",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Current - Receiving"
+          },
+          "value": "25",
+          "units": "mA"
+        },
+        {
+          "attribute": {
+            "name": "Current - Transmitting"
+          },
+          "value": "130",
+          "units": "mA"
+        },
+        {
+          "attribute": {
+            "name": "Data Rate"
+          },
+          "value": "250",
+          "units": "kbps"
+        },
+        {
+          "attribute": {
+            "name": "Depth"
+          },
+          "value": "22.86",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Evaluation Kit"
+          },
+          "value": "Yes",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "1.73",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Interface"
+          },
+          "value": "SPI",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "33.02",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Max Frequency"
+          },
+          "value": "2.483",
+          "units": "GHz"
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "85",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Max Supply Voltage"
+          },
+          "value": "3.6",
+          "units": "V"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-40",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Min Supply Voltage"
+          },
+          "value": "2.4",
+          "units": "V"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Surface Mount  ",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Nominal Supply Current"
+          },
+          "value": "130",
+          "units": "mA"
+        },
+        {
+          "attribute": {
+            "name": "Number of Pins"
+          },
+          "value": "12",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Operating Supply Voltage"
+          },
+          "value": "3.3",
+          "units": "V"
+        },
+        {
+          "attribute": {
+            "name": "REACH SVHC"
+          },
+          "value": "No",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Sensitivity (dBm)"
+          },
+          "value": "-102",
+          "units": "dBm"
+        },
+        {
+          "attribute": {
+            "name": "Width"
+          },
+          "value": "22.86",
+          "units": "mm"
+        }
+      ],
+      "sellers": [
+        {
+          "company": {
+            "name": "RS (Formerly Allied Electronics)"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 31.03,
+                  "quantity": 40,
+                  "currency": "USD"
+                },
+                {
+                  "price": 29.48,
+                  "quantity": 200,
+                  "currency": "USD"
+                },
+                {
+                  "price": 27.93,
+                  "quantity": 400,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "NAC Semi"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": []
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Farnell"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 11.42,
+                  "quantity": 1,
+                  "currency": "GBP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mpn": "AC164134-1",
+      "octopartUrl": "https://octopart.com/ac164134-1-microchip-18158842",
+      "manufacturer": {
+        "name": "Microchip"
+      },
+      "shortDescription": "Daughter Board, PICtail Plus, MRF24J40MA 2.4GHz IEEE Std. 802.15.4\u001a +0 dBm RF Transceiver",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "Module",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Core Architecture"
+          },
+          "value": "PIC",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Country of Origin"
+          },
+          "value": "China",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Evaluation Kit"
+          },
+          "value": "Yes",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Frequency"
+          },
+          "value": "2.4",
+          "units": "GHz"
+        },
+        {
+          "attribute": {
+            "name": "Introduction Date"
+          },
+          "value": "2009-12-16",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Operating Supply Voltage"
+          },
+          "value": "3.3",
+          "units": "V"
+        },
+        {
+          "attribute": {
+            "name": "REACH SVHC"
+          },
+          "value": "No",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Schedule B"
+          },
+          "value": "8473300002",
+          "units": ""
+        }
+      ],
+      "sellers": [
+        {
+          "company": {
+            "name": "DigiKey"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 4,
+              "prices": [
+                {
+                  "price": 41.65,
+                  "quantity": 1,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Microchip"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 1,
+              "prices": [
+                {
+                  "price": 39.2,
+                  "quantity": 1,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 39.2,
+                  "quantity": 4,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Onlinecomponents.com"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 43.84,
+                  "quantity": 1,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Richardson RFPD"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 46.93,
+                  "quantity": 4,
+                  "currency": "USD"
+                },
+                {
+                  "price": 42.72,
+                  "quantity": 100,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 39.2,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 39.2,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 39.2,
+                  "quantity": 50,
+                  "currency": "USD"
+                },
+                {
+                  "price": 39.2,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 39.2,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 39.2,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Master Electronics"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 43.84,
+                  "quantity": 1,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Future Electronics"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 41.16,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 40.61,
+                  "quantity": 4,
+                  "currency": "USD"
+                },
+                {
+                  "price": 40.09,
+                  "quantity": 15,
+                  "currency": "USD"
+                },
+                {
+                  "price": 39.82,
+                  "quantity": 30,
+                  "currency": "USD"
+                },
+                {
+                  "price": 39.2,
+                  "quantity": 75,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "NAC Semi"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 47.6,
+                  "quantity": 7,
+                  "currency": "USD"
+                },
+                {
+                  "price": 43.84,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 41.65,
+                  "quantity": 500,
+                  "currency": "USD"
+                },
+                {
+                  "price": 40.63,
+                  "quantity": 800,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Avnet"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 39.31563,
+                  "quantity": 4,
+                  "currency": "USD"
+                },
+                {
+                  "price": 38.98444,
+                  "quantity": 6,
+                  "currency": "USD"
+                },
+                {
+                  "price": 38.64981,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 38.31206,
+                  "quantity": 20,
+                  "currency": "USD"
+                },
+                {
+                  "price": 37.9845,
+                  "quantity": 40,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Farnell"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 31.48,
+                  "quantity": 1,
+                  "currency": "GBP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "element14 APAC"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 56.06,
+                  "quantity": 1,
+                  "currency": "SGD"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mpn": "AC164149",
+      "octopartUrl": "https://octopart.com/ac164149-microchip-24994913",
+      "manufacturer": {
+        "name": "Microchip"
+      },
+      "shortDescription": "WiFi Pictail/Pictail Plus Daughter Board | Microchip Technology Inc. AC164149",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "Module",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Evaluation Kit"
+          },
+          "value": "Yes",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Frequency"
+          },
+          "value": "2.4",
+          "units": "GHz"
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "REACH SVHC"
+          },
+          "value": "No",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "units": ""
+        }
+      ],
+      "sellers": [
+        {
+          "company": {
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 45.6,
+                  "quantity": 3,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Richardson RFPD"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": []
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "NAC Semi"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": []
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Farnell"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 37.14,
+                  "quantity": 1,
+                  "currency": "GBP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "element14 APAC"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 63.01,
+                  "quantity": 1,
+                  "currency": "SGD"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "sellers": [
     {
       "company": {

@@ -1,6 +1,6 @@
 "use client";
 
-import { BomProcessingResult } from "@/lib/types";
+import { BomProcessingResult, ParsedBomItem } from "@/lib/types";
 import { DataTable } from "./data-table";
 import { columns } from "./bom-results-columns";
 

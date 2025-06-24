@@ -30,6 +30,13 @@ export interface OctopartPart {
     octopart_url: string | null;
     specs: OctopartSpec[];
     sellers: OctopartSeller[];
+    similar_parts: SimilarPart[];
+}
+
+export interface SimilarPart {
+    mpn: string | null;
+    manufacturer_name: string | null;
+    specs: OctopartSpec[];
 }
 
 export interface ExtractedParameters {
@@ -47,6 +54,15 @@ export interface ParsedBomItem {
     parameters: ExtractedParameters;
     parsing_notes: string | null;
     octopart_data: OctopartPart | null;
+    recommended_alternative: SimilarPart | null;
+    cost_analysis: CostAnalysis | null;
+}
+
+export interface CostAnalysis {
+    original_part_cost: number | null;
+    alternative_part_cost: number | null;
+    savings_per_board: number | null;
+    total_savings: number | null;
 }
 
 export interface BomProcessingResult {

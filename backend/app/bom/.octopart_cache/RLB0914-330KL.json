@@ -287,6 +287,2914 @@
       "units": "%"
     }
   ],
+  "similarParts": [
+    {
+      "mpn": "LHL08TB330K",
+      "octopartUrl": "https://octopart.com/lhl08tb330k-taiyo+yuden-394006",
+      "manufacturer": {
+        "name": "Taiyo Yuden"
+      },
+      "shortDescription": "Fixed Ind 33UH 1.4A 100 Mohm Th",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Core Material"
+          },
+          "value": "Ferrite",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Current Rating"
+          },
+          "value": "1.4",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "DC Resistance (DCR)"
+          },
+          "value": "100",
+          "units": "m\u03a9"
+        },
+        {
+          "attribute": {
+            "name": "Diameter"
+          },
+          "value": "9",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "9.5",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Height - Seated (Max)"
+          },
+          "value": "9.4996",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Inductance"
+          },
+          "value": "33",
+          "units": "\u00b5H"
+        },
+        {
+          "attribute": {
+            "name": "Lead/Base Style"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "9.5",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Max DC Current"
+          },
+          "value": "1.4",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "105",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-25",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Through Hole  ",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Q Factor"
+          },
+          "value": "40",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Radiation Hardening"
+          },
+          "value": "No",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Self Resonant Frequency"
+          },
+          "value": "8.8",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Shielding"
+          },
+          "value": "Unshielded",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Termination"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Test Frequency"
+          },
+          "value": "2.52",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "10",
+          "units": "%"
+        }
+      ],
+      "sellers": []
+    },
+    {
+      "mpn": "RLB9012-330KL",
+      "octopartUrl": "https://octopart.com/rlb9012-330kl-bourns-7336254",
+      "manufacturer": {
+        "name": "Bourns"
+      },
+      "shortDescription": "Inductor Power Wirewound 33uH 10% 1KHz 30Q-Factor Ferrite 2.05A 0.09Ohm DCR RDL Bag",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Composition"
+          },
+          "value": "Wirewound",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Core Material"
+          },
+          "value": "Ferrite",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Current Rating"
+          },
+          "value": "2.05",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "DC Current"
+          },
+          "value": "2.05",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "DC Resistance (DCR)"
+          },
+          "value": "90",
+          "units": "m\u03a9"
+        },
+        {
+          "attribute": {
+            "name": "Diameter"
+          },
+          "value": "9",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "12.2",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Height - Seated (Max)"
+          },
+          "value": "12.192",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Inductance"
+          },
+          "value": "33",
+          "units": "\u00b5H"
+        },
+        {
+          "attribute": {
+            "name": "Inductance Tolerance"
+          },
+          "value": "10",
+          "units": "%"
+        },
+        {
+          "attribute": {
+            "name": "Lead/Base Style"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Lead Pitch"
+          },
+          "value": "5",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Max DC Current"
+          },
+          "value": "2.05",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "125",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Military Standard"
+          },
+          "value": "Not",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-55",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Through Hole  ",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Packaging"
+          },
+          "value": "Bulk",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Q Factor"
+          },
+          "value": "30",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Radiation Hardening"
+          },
+          "value": "No",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "REACH SVHC"
+          },
+          "value": "No",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "RMS Current (Irms)"
+          },
+          "value": "2.05",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Schedule B"
+          },
+          "value": "8504500000, 8504500000|8504500000|8504500000|8504500000|8504500000",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Self Resonant Frequency"
+          },
+          "value": "7.8",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Shielding"
+          },
+          "value": "Unshielded",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Termination"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Test Frequency"
+          },
+          "value": "1",
+          "units": "kHz"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "10",
+          "units": "%"
+        }
+      ],
+      "sellers": [
+        {
+          "company": {
+            "name": "DigiKey"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 798,
+              "prices": [
+                {
+                  "price": 0.58,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.477,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.4416,
+                  "quantity": 25,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.4164,
+                  "quantity": 50,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.37005,
+                  "quantity": 200,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.34893,
+                  "quantity": 400,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.33712,
+                  "quantity": 600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.32282,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.29772,
+                  "quantity": 2600,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Verical"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 154000,
+              "prices": [
+                {
+                  "price": 0.3339,
+                  "quantity": 307,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Arrow Electronics"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 154000,
+              "prices": [
+                {
+                  "price": 0.3339,
+                  "quantity": 307,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3207,
+                  "quantity": 400,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.312,
+                  "quantity": 600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3089,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2938,
+                  "quantity": 2600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2894,
+                  "quantity": 5000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2781,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.2583,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2488,
+                  "quantity": 2600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2473,
+                  "quantity": 5000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2397,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 2180,
+              "prices": [
+                {
+                  "price": 0.58,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.434,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.4,
+                  "quantity": 50,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.377,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.317,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.279,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "TTI"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 39790,
+              "prices": [
+                {
+                  "price": 0.43,
+                  "quantity": 20,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.396,
+                  "quantity": 50,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.373,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.317,
+                  "quantity": 200,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.311,
+                  "quantity": 600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.281,
+                  "quantity": 2600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.275,
+                  "quantity": 5000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.369,
+                  "quantity": 1000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Onlinecomponents.com"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.3942,
+                  "quantity": 200,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3203,
+                  "quantity": 600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2971,
+                  "quantity": 2600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.277,
+                  "quantity": 5000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2729,
+                  "quantity": 7600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2688,
+                  "quantity": 15000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2628,
+                  "quantity": 25000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2589,
+                  "quantity": 50000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Avnet"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.25861,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2545,
+                  "quantity": 1400,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2504,
+                  "quantity": 2400,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.24631,
+                  "quantity": 5000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.23789,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Master Electronics"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.3942,
+                  "quantity": 200,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3203,
+                  "quantity": 600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2971,
+                  "quantity": 2600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.277,
+                  "quantity": 5000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2729,
+                  "quantity": 7600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2688,
+                  "quantity": 15000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2628,
+                  "quantity": 25000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2589,
+                  "quantity": 50000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Anglia"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.369,
+                  "quantity": 200,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.301,
+                  "quantity": 201,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.259,
+                  "quantity": 401,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.216,
+                  "quantity": 601,
+                  "currency": "GBP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mpn": "LHL10NB330K",
+      "octopartUrl": "https://octopart.com/lhl10nb330k-taiyo+yuden-394059",
+      "manufacturer": {
+        "name": "Taiyo Yuden"
+      },
+      "shortDescription": "Ind Power 33uH 10% 2.52MHz 60Q-Factor Ferrite 1.9A RDL Bulk",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Core Material"
+          },
+          "value": "Ferrite",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Current Rating"
+          },
+          "value": "1.9",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "DC Resistance (DCR)"
+          },
+          "value": "78",
+          "units": "m\u03a9"
+        },
+        {
+          "attribute": {
+            "name": "Diameter"
+          },
+          "value": "11",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "13.9954",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Inductance"
+          },
+          "value": "33",
+          "units": "\u00b5H"
+        },
+        {
+          "attribute": {
+            "name": "Lead/Base Style"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "14",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Max DC Current"
+          },
+          "value": "1.9",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "105",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-25",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Through Hole  ",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Packaging"
+          },
+          "value": "Bulk",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Q Factor"
+          },
+          "value": "60",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Radiation Hardening"
+          },
+          "value": "No",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Self Resonant Frequency"
+          },
+          "value": "6.8",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Shielding"
+          },
+          "value": "Unshielded",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Termination"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Test Frequency"
+          },
+          "value": "2.52",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "10",
+          "units": "%"
+        }
+      ],
+      "sellers": []
+    },
+    {
+      "mpn": "AIUR-03-330K",
+      "octopartUrl": "https://octopart.com/aiur-03-330k-abracon-7864370",
+      "manufacturer": {
+        "name": "Abracon"
+      },
+      "shortDescription": "Fixed Ind 33Uh 1.1A 90 Mohm Th/Bulk Rohs Compliant: Yes |Abracon AIUR-03-330K",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Composition"
+          },
+          "value": "Wirewound",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Core Material"
+          },
+          "value": "Ferrite",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Current Rating"
+          },
+          "value": "1.1",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "DC Resistance (DCR)"
+          },
+          "value": "90",
+          "units": "m\u03a9"
+        },
+        {
+          "attribute": {
+            "name": "Diameter"
+          },
+          "value": "9",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "12",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Height - Seated (Max)"
+          },
+          "value": "11.9888",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Inductance"
+          },
+          "value": "33",
+          "units": "\u00b5H"
+        },
+        {
+          "attribute": {
+            "name": "Lead/Base Style"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Lead Diameter"
+          },
+          "value": "640",
+          "units": "\u00b5m"
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Lead Pitch"
+          },
+          "value": "5",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "12",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Max DC Current"
+          },
+          "value": "1.6",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "85",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-25",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Through Hole  ",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Packaging"
+          },
+          "value": "Box",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Q Factor"
+          },
+          "value": "30",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Radiation Hardening"
+          },
+          "value": "No",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Saturation Current"
+          },
+          "value": "1.6",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "Self Resonant Frequency"
+          },
+          "value": "7.8",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Shielding"
+          },
+          "value": "Unshielded",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Termination"
+          },
+          "value": "Radial",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Test Frequency"
+          },
+          "value": "2.52",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "10",
+          "units": "%"
+        }
+      ],
+      "sellers": [
+        {
+          "company": {
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 1124,
+              "prices": [
+                {
+                  "price": 0.39,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.321,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.321,
+                  "quantity": 50,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.321,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.321,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.29,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "DigiKey"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 1950,
+              "prices": [
+                {
+                  "price": 0.39,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.317,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2932,
+                  "quantity": 25,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2764,
+                  "quantity": 50,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2456,
+                  "quantity": 200,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.23158,
+                  "quantity": 400,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.22373,
+                  "quantity": 600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.21425,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.19757,
+                  "quantity": 2600,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.453,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.419,
+                  "quantity": 2500,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Onlinecomponents.com"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.4306,
+                  "quantity": 200,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.4172,
+                  "quantity": 600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3985,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3814,
+                  "quantity": 2600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3479,
+                  "quantity": 5000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3301,
+                  "quantity": 7600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3252,
+                  "quantity": 10000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3053,
+                  "quantity": 15000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Master Electronics"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.4306,
+                  "quantity": 200,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.4172,
+                  "quantity": 600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3985,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3814,
+                  "quantity": 2600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3479,
+                  "quantity": 5000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3301,
+                  "quantity": 7600,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3252,
+                  "quantity": 10000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3053,
+                  "quantity": 15000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Arrow Electronics"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.3426,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.334,
+                  "quantity": 3000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3251,
+                  "quantity": 6000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3164,
+                  "quantity": 12000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.3075,
+                  "quantity": 24000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2989,
+                  "quantity": 48000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Avnet"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": []
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Anglia"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.329,
+                  "quantity": 200,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.309,
+                  "quantity": 201,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.291,
+                  "quantity": 401,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.276,
+                  "quantity": 601,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.258,
+                  "quantity": 801,
+                  "currency": "GBP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mpn": "ASPI-0705-330K-T",
+      "octopartUrl": "https://octopart.com/aspi-0705-330k-t-abracon-34827969",
+      "manufacturer": {
+        "name": "Abracon"
+      },
+      "shortDescription": "Fixed Ind 33Uh 1.2A 130 Mohm Smd/Tape & Reel (Tr) Rohs Compliant: Yes |Abracon ASPI-0705-330K-T",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "Nonstandard",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Composition"
+          },
+          "value": "Wirewound",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Core Material"
+          },
+          "value": "Ferrite",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Current Rating"
+          },
+          "value": "1.2",
+          "units": "A"
+        },
+        {
+          "attribute": {
+            "name": "DC Resistance (DCR)"
+          },
+          "value": "130",
+          "units": "m\u03a9"
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "5",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Height - Seated (Max)"
+          },
+          "value": "5.5118",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Inductance"
+          },
+          "value": "33",
+          "units": "\u00b5H"
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "7.8",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Lifecycle Status"
+          },
+          "value": "Production",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "85",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-40",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Surface Mount  ",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Packaging"
+          },
+          "value": "Tape & Reel (TR)",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Shielding"
+          },
+          "value": "Unshielded",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Test Frequency"
+          },
+          "value": "2.52",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "10",
+          "units": "%"
+        },
+        {
+          "attribute": {
+            "name": "Width"
+          },
+          "value": "7.0104",
+          "units": "mm"
+        }
+      ],
+      "sellers": [
+        {
+          "company": {
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 20,
+              "prices": [
+                {
+                  "price": 0.41,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.339,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.306,
+                  "quantity": 50,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.272,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.228,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.188,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "DigiKey"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 11,
+              "prices": [
+                {
+                  "price": 0.41,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.339,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2785,
+                  "quantity": 100,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 11,
+              "prices": [
+                {
+                  "price": 0.41,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.339,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2785,
+                  "quantity": 100,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.22902,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.20742,
+                  "quantity": 2000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.20541,
+                  "quantity": 3000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.19982,
+                  "quantity": 5000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.19422,
+                  "quantity": 7000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.18845,
+                  "quantity": 10000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.18164,
+                  "quantity": 25000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.274,
+                  "quantity": 2000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.269,
+                  "quantity": 5000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.25,
+                  "quantity": 10000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.235,
+                  "quantity": 20000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.221,
+                  "quantity": 30000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.213,
+                  "quantity": 50000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Onlinecomponents.com"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.2121,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2029,
+                  "quantity": 3000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1999,
+                  "quantity": 5000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1855,
+                  "quantity": 8000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1781,
+                  "quantity": 10000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1645,
+                  "quantity": 25000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1579,
+                  "quantity": 50000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1555,
+                  "quantity": 100000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Arrow Electronics"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.2597,
+                  "quantity": 2000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.248,
+                  "quantity": 10000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2414,
+                  "quantity": 26000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2347,
+                  "quantity": 50000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Master Electronics"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.2121,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.2029,
+                  "quantity": 3000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1999,
+                  "quantity": 5000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1855,
+                  "quantity": 8000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1781,
+                  "quantity": 10000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1645,
+                  "quantity": 25000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1579,
+                  "quantity": 50000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1555,
+                  "quantity": 100000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Avnet"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": []
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Anglia"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.192,
+                  "quantity": 1000,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.18,
+                  "quantity": 1001,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.17,
+                  "quantity": 2001,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.161,
+                  "quantity": 3001,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.15,
+                  "quantity": 4001,
+                  "currency": "GBP"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mpn": "CM322522-330KL",
+      "octopartUrl": "https://octopart.com/cm322522-330kl-bourns-152086",
+      "manufacturer": {
+        "name": "Bourns"
+      },
+      "shortDescription": "Inductor General Purpose Chip Wirewound 33uH 10% 2.52MHz 30Q-Factor Ferrite 70mA 5.6Ohm DCR 1210 T/R",
+      "specs": [
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "1210",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Imperial)"
+          },
+          "value": "1210",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Metric)"
+          },
+          "value": "3225",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Composition"
+          },
+          "value": "Wirewound",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Core Material"
+          },
+          "value": "Ferrite",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Current"
+          },
+          "value": "70",
+          "units": "mA"
+        },
+        {
+          "attribute": {
+            "name": "Current Rating"
+          },
+          "value": "85",
+          "units": "mA"
+        },
+        {
+          "attribute": {
+            "name": "DC Current"
+          },
+          "value": "85",
+          "units": "mA"
+        },
+        {
+          "attribute": {
+            "name": "DC Resistance (DCR)"
+          },
+          "value": "5.6",
+          "units": "\u03a9"
+        },
+        {
+          "attribute": {
+            "name": "Depth"
+          },
+          "value": "2.5",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "2.2",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Height - Seated (Max)"
+          },
+          "value": "2.1844",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Inductance"
+          },
+          "value": "33",
+          "units": "\u00b5H"
+        },
+        {
+          "attribute": {
+            "name": "Inductance Tolerance"
+          },
+          "value": "10",
+          "units": "%"
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "3.2",
+          "units": "mm"
+        },
+        {
+          "attribute": {
+            "name": "Max DC Current"
+          },
+          "value": "85",
+          "units": "mA"
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "100",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Military Standard"
+          },
+          "value": "Not",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-20",
+          "units": "\u00b0C"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Surface Mount  ",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Number of Pins"
+          },
+          "value": "2",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Packaging"
+          },
+          "value": "Cut Tape",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Q Factor"
+          },
+          "value": "30",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Radiation Hardening"
+          },
+          "value": "No",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "REACH SVHC"
+          },
+          "value": "No",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Resistance"
+          },
+          "value": "5.6",
+          "units": "\u03a9"
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Schedule B"
+          },
+          "value": "8504500000, 8504500000|8504500000, 8504500000|8504500000|8504500000, 8504500000|8504500000|8504500000|8504500000",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Self Resonant Frequency"
+          },
+          "value": "20",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Series Resistance"
+          },
+          "value": "5.6",
+          "units": "\u03a9"
+        },
+        {
+          "attribute": {
+            "name": "Shielding"
+          },
+          "value": "Unshielded",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Termination"
+          },
+          "value": "SMD/SMT",
+          "units": ""
+        },
+        {
+          "attribute": {
+            "name": "Test Frequency"
+          },
+          "value": "2.52",
+          "units": "MHz"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "10",
+          "units": "%"
+        },
+        {
+          "attribute": {
+            "name": "Width"
+          },
+          "value": "2.4892",
+          "units": "mm"
+        }
+      ],
+      "sellers": [
+        {
+          "company": {
+            "name": "Onlinecomponents.com"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 15600,
+              "prices": [
+                {
+                  "price": 0.113,
+                  "quantity": 2000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1082,
+                  "quantity": 4000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1066,
+                  "quantity": 6000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.105,
+                  "quantity": 8000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1,
+                  "quantity": 26000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.0963,
+                  "quantity": 50000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.094,
+                  "quantity": 100000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.0926,
+                  "quantity": 150000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "DigiKey"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 11331,
+              "prices": [
+                {
+                  "price": 0.23,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.193,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1588,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.13059,
+                  "quantity": 1000,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 11331,
+              "prices": [
+                {
+                  "price": 0.23,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.193,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1588,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.13059,
+                  "quantity": 1000,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 10000,
+              "prices": [
+                {
+                  "price": 0.12313,
+                  "quantity": 2000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1161,
+                  "quantity": 4000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.11218,
+                  "quantity": 6000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.10743,
+                  "quantity": 10000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.10442,
+                  "quantity": 14000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.10131,
+                  "quantity": 20000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.09377,
+                  "quantity": 50000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.09375,
+                  "quantity": 100000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Master Electronics"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 15600,
+              "prices": [
+                {
+                  "price": 0.113,
+                  "quantity": 2000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1082,
+                  "quantity": 4000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1066,
+                  "quantity": 6000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.105,
+                  "quantity": 8000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1,
+                  "quantity": 26000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.0963,
+                  "quantity": 50000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.094,
+                  "quantity": 100000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.0926,
+                  "quantity": 150000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Verical"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 219,
+              "prices": [
+                {
+                  "price": 0.0882,
+                  "quantity": 219,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 10000,
+              "prices": [
+                {
+                  "price": 0.1013,
+                  "quantity": 2000,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 14000,
+              "prices": [
+                {
+                  "price": 0.1582,
+                  "quantity": 2000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1515,
+                  "quantity": 4000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.1492,
+                  "quantity": 6000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.147,
+                  "quantity": 8000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.14,
+                  "quantity": 26000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Arrow Electronics"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 219,
+              "prices": [
+                {
+                  "price": 0.0882,
+                  "quantity": 219,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 10000,
+              "prices": [
+                {
+                  "price": 0.1016,
+                  "quantity": 2000,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.0768,
+                  "quantity": 10000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.0767,
+                  "quantity": 14000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 6191,
+              "prices": [
+                {
+                  "price": 0.23,
+                  "quantity": 1,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.193,
+                  "quantity": 10,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.193,
+                  "quantity": 50,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.154,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.127,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.108,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "TTI"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.101,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.17,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.138,
+                  "quantity": 10000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.124,
+                  "quantity": 20000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.115,
+                  "quantity": 30000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.105,
+                  "quantity": 50000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "TTI Europe"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 16000,
+              "prices": [
+                {
+                  "price": 0.094,
+                  "quantity": 2000,
+                  "currency": "EUR"
+                },
+                {
+                  "price": 0.089,
+                  "quantity": 20000,
+                  "currency": "EUR"
+                },
+                {
+                  "price": 0.088,
+                  "quantity": 26000,
+                  "currency": "EUR"
+                },
+                {
+                  "price": 0.082,
+                  "quantity": 50000,
+                  "currency": "EUR"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Avnet"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.09113,
+                  "quantity": 10000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.09,
+                  "quantity": 14000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.07465,
+                  "quantity": 24000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.07411,
+                  "quantity": 50000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.07373,
+                  "quantity": 100000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "TTI Asia"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.1,
+                  "quantity": 2000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.096,
+                  "quantity": 4000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.094,
+                  "quantity": 6000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.092,
+                  "quantity": 10000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Schukat"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 600,
+              "prices": [
+                {
+                  "price": 0.1122,
+                  "quantity": 100,
+                  "currency": "EUR"
+                },
+                {
+                  "price": 0.1287,
+                  "quantity": 100,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.101,
+                  "quantity": 500,
+                  "currency": "EUR"
+                },
+                {
+                  "price": 0.1159,
+                  "quantity": 500,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.0942,
+                  "quantity": 1000,
+                  "currency": "EUR"
+                },
+                {
+                  "price": 0.1081,
+                  "quantity": 1000,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Anglia"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.11265,
+                  "quantity": 2000,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.09169,
+                  "quantity": 2001,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.07886,
+                  "quantity": 4001,
+                  "currency": "GBP"
+                },
+                {
+                  "price": 0.06571,
+                  "quantity": 6001,
+                  "currency": "GBP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "Farnell"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.115,
+                  "quantity": 5,
+                  "currency": "GBP"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.115,
+                  "quantity": 100,
+                  "currency": "GBP"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
+            "name": "element14 APAC"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.201,
+                  "quantity": 5,
+                  "currency": "SGD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 0,
+              "prices": [
+                {
+                  "price": 0.201,
+                  "quantity": 100,
+                  "currency": "SGD"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "sellers": [
     {
       "company": {
