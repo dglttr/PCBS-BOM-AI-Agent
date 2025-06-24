@@ -1,0 +1,395 @@
+{
+  "mpn": "FC68148",
+  "manufacturer": {
+    "name": "Cliff"
+  },
+  "shortDescription": "Cliff Electronic - FC68148-DC POWER SKT DC10A (5.5X2.1mm)ANGLED",
+  "octopartUrl": "https://octopart.com/fc68148-cliff-25728680",
+  "specs": [
+    {
+      "attribute": {
+        "name": "Connector Type",
+        "shortname": "connectortype"
+      },
+      "value": "Socket",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Current Rating",
+        "shortname": "currentrating"
+      },
+      "value": "5",
+      "units": "A"
+    },
+    {
+      "attribute": {
+        "name": "Height",
+        "shortname": "height"
+      },
+      "value": "6.35",
+      "units": "mm"
+    },
+    {
+      "attribute": {
+        "name": "Inside Diameter",
+        "shortname": "insidediameter"
+      },
+      "value": "6.3",
+      "units": "mm"
+    },
+    {
+      "attribute": {
+        "name": "Length",
+        "shortname": "length"
+      },
+      "value": "127",
+      "units": "mm"
+    },
+    {
+      "attribute": {
+        "name": "Orientation",
+        "shortname": "orientation"
+      },
+      "value": "Right Angle",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "RoHS",
+        "shortname": "rohs"
+      },
+      "value": "Compliant",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Voltage Rating (DC)",
+        "shortname": "voltagerating_dc_"
+      },
+      "value": "12",
+      "units": "V"
+    },
+    {
+      "attribute": {
+        "name": "Weight",
+        "shortname": "weight"
+      },
+      "value": "45.359237",
+      "units": "g"
+    }
+  ],
+  "sellers": [
+    {
+      "company": {
+        "name": "DigiKey"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 1203,
+          "prices": [
+            {
+              "price": 1.17,
+              "quantity": 1,
+              "currency": "USD"
+            },
+            {
+              "price": 0.997,
+              "quantity": 10,
+              "currency": "USD"
+            },
+            {
+              "price": 0.9344,
+              "quantity": 25,
+              "currency": "USD"
+            },
+            {
+              "price": 0.8896,
+              "quantity": 50,
+              "currency": "USD"
+            },
+            {
+              "price": 0.847,
+              "quantity": 100,
+              "currency": "USD"
+            },
+            {
+              "price": 0.78377,
+              "quantity": 300,
+              "currency": "USD"
+            },
+            {
+              "price": 0.756,
+              "quantity": 500,
+              "currency": "USD"
+            },
+            {
+              "price": 0.71991,
+              "quantity": 1000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.67484,
+              "quantity": 2500,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Newark"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 1755,
+          "prices": [
+            {
+              "price": 7.87,
+              "quantity": 1,
+              "currency": "USD"
+            },
+            {
+              "price": 5.79,
+              "quantity": 10,
+              "currency": "USD"
+            },
+            {
+              "price": 4.44,
+              "quantity": 100,
+              "currency": "USD"
+            },
+            {
+              "price": 4.38,
+              "quantity": 250,
+              "currency": "USD"
+            },
+            {
+              "price": 4.3,
+              "quantity": 500,
+              "currency": "USD"
+            },
+            {
+              "price": 4.22,
+              "quantity": 1000,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Conrad"
+      },
+      "offers": [
+        {
+          "inventoryLevel": -2,
+          "prices": [
+            {
+              "price": 1.49,
+              "quantity": 1,
+              "currency": "EUR"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Rapid Electronics"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 4192,
+          "prices": [
+            {
+              "price": 0.396,
+              "quantity": 1,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.376,
+              "quantity": 10,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.327,
+              "quantity": 50,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.303,
+              "quantity": 100,
+              "currency": "GBP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Schukat"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 5160,
+          "prices": [
+            {
+              "price": 0.6074,
+              "quantity": 10,
+              "currency": "EUR"
+            },
+            {
+              "price": 0.6968,
+              "quantity": 10,
+              "currency": "USD"
+            },
+            {
+              "price": 0.4818,
+              "quantity": 50,
+              "currency": "EUR"
+            },
+            {
+              "price": 0.5527,
+              "quantity": 50,
+              "currency": "USD"
+            },
+            {
+              "price": 0.4191,
+              "quantity": 200,
+              "currency": "EUR"
+            },
+            {
+              "price": 0.4808,
+              "quantity": 200,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Farnell"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 1764,
+          "prices": [
+            {
+              "price": 5.74,
+              "quantity": 1,
+              "currency": "GBP"
+            },
+            {
+              "price": 4.17,
+              "quantity": 10,
+              "currency": "GBP"
+            },
+            {
+              "price": 3.16,
+              "quantity": 100,
+              "currency": "GBP"
+            },
+            {
+              "price": 3.11,
+              "quantity": 250,
+              "currency": "GBP"
+            },
+            {
+              "price": 3.05,
+              "quantity": 500,
+              "currency": "GBP"
+            },
+            {
+              "price": 2.99,
+              "quantity": 1000,
+              "currency": "GBP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "element14 APAC"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 1739,
+          "prices": [
+            {
+              "price": 15.13,
+              "quantity": 1,
+              "currency": "SGD"
+            },
+            {
+              "price": 14.18,
+              "quantity": 3,
+              "currency": "SGD"
+            },
+            {
+              "price": 13.5,
+              "quantity": 5,
+              "currency": "SGD"
+            },
+            {
+              "price": 12.86,
+              "quantity": 10,
+              "currency": "SGD"
+            },
+            {
+              "price": 11.89,
+              "quantity": 30,
+              "currency": "SGD"
+            },
+            {
+              "price": 11.48,
+              "quantity": 50,
+              "currency": "SGD"
+            },
+            {
+              "price": 10.92,
+              "quantity": 100,
+              "currency": "SGD"
+            },
+            {
+              "price": 10.24,
+              "quantity": 250,
+              "currency": "SGD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Anglia"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 0,
+          "prices": [
+            {
+              "price": 0.48,
+              "quantity": 100,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.43,
+              "quantity": 101,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.39,
+              "quantity": 501,
+              "currency": "GBP"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

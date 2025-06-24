@@ -1,0 +1,203 @@
+{
+  "mpn": "RF430FRL152HEVM",
+  "manufacturer": {
+    "name": "Texas Instruments"
+  },
+  "shortDescription": "Texas Instruments RF430FRL152HEVMEVAL Board, RF430FRL152H Nfc Transponder",
+  "octopartUrl": "https://octopart.com/rf430frl152hevm-texas+instruments-51285653",
+  "specs": [
+    {
+      "attribute": {
+        "name": "Case/Package",
+        "shortname": "case_package"
+      },
+      "value": "Module",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Evaluation Kit",
+        "shortname": "evaluationkit"
+      },
+      "value": "Yes",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Features",
+        "shortname": "features"
+      },
+      "value": "I\u00b2C",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Frequency",
+        "shortname": "frequency"
+      },
+      "value": "13.56",
+      "units": "MHz"
+    },
+    {
+      "attribute": {
+        "name": "Lead Free",
+        "shortname": "leadfree"
+      },
+      "value": "Lead Free",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Lifecycle Status",
+        "shortname": "lifecyclestatus"
+      },
+      "value": "Production",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Manufacturer Lifecycle Status",
+        "shortname": "manufacturerlifecyclestatus"
+      },
+      "value": "ACTIVE",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Number of Pins",
+        "shortname": "numberofpins"
+      },
+      "value": "0",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "REACH SVHC",
+        "shortname": "reachsvhc"
+      },
+      "value": "No",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "RoHS",
+        "shortname": "rohs"
+      },
+      "value": "Compliant",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Schedule B",
+        "shortname": "scheduleB"
+      },
+      "value": "8473300002",
+      "units": ""
+    }
+  ],
+  "sellers": [
+    {
+      "company": {
+        "name": "Mouser"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 14,
+          "prices": [
+            {
+              "price": 131.66,
+              "quantity": 1,
+              "currency": "USD"
+            },
+            {
+              "price": 131.66,
+              "quantity": 10,
+              "currency": "USD"
+            },
+            {
+              "price": 131.66,
+              "quantity": 50,
+              "currency": "USD"
+            },
+            {
+              "price": 131.66,
+              "quantity": 100,
+              "currency": "USD"
+            },
+            {
+              "price": 131.66,
+              "quantity": 1000,
+              "currency": "USD"
+            },
+            {
+              "price": 131.66,
+              "quantity": 10000,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Texas Instruments"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 18,
+          "prices": [
+            {
+              "price": 99,
+              "quantity": 1,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "DigiKey"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 262,
+          "prices": [
+            {
+              "price": 118.8,
+              "quantity": 1,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Arrow Electronics"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 0,
+          "prices": [
+            {
+              "price": 112.08,
+              "quantity": 1,
+              "currency": "USD"
+            }
+          ]
+        },
+        {
+          "inventoryLevel": 0,
+          "prices": [
+            {
+              "price": 112.08,
+              "quantity": 1,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

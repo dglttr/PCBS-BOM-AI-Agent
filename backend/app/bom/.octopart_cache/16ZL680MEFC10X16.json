@@ -1,0 +1,454 @@
+{
+  "mpn": "16ZL680MEFC10X16",
+  "manufacturer": {
+    "name": "Rubycon"
+  },
+  "shortDescription": "ZL Series 16 V 680 \u00b5F 10 x 16mm LS=5mm Radial Aluminum Electrolytic Capacitor",
+  "octopartUrl": "https://octopart.com/16zl680mefc10x16-rubycon-19941793",
+  "specs": [
+    {
+      "attribute": {
+        "name": "Capacitance",
+        "shortname": "capacitance"
+      },
+      "value": "680",
+      "units": "\u00b5F"
+    },
+    {
+      "attribute": {
+        "name": "Case/Package",
+        "shortname": "case_package"
+      },
+      "value": "Radial",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Diameter",
+        "shortname": "diameter"
+      },
+      "value": "10",
+      "units": "mm"
+    },
+    {
+      "attribute": {
+        "name": "Dielectric Material",
+        "shortname": "dielectricmaterial"
+      },
+      "value": "Aluminium",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Height",
+        "shortname": "height"
+      },
+      "value": "16",
+      "units": "mm"
+    },
+    {
+      "attribute": {
+        "name": "Height - Seated (Max)",
+        "shortname": "height_seated_max_"
+      },
+      "value": "17.4752",
+      "units": "mm"
+    },
+    {
+      "attribute": {
+        "name": "Impedance",
+        "shortname": "impedance"
+      },
+      "value": "38",
+      "units": "m\u03a9"
+    },
+    {
+      "attribute": {
+        "name": "Lead Diameter",
+        "shortname": "leaddiameter"
+      },
+      "value": "600",
+      "units": "\u00b5m"
+    },
+    {
+      "attribute": {
+        "name": "Lead Free",
+        "shortname": "leadfree"
+      },
+      "value": "Lead Free",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Lead Pitch",
+        "shortname": "leadpitch"
+      },
+      "value": "5",
+      "units": "mm"
+    },
+    {
+      "attribute": {
+        "name": "Leakage Current",
+        "shortname": "leakagecurrent"
+      },
+      "value": "3",
+      "units": "\u00b5A"
+    },
+    {
+      "attribute": {
+        "name": "Life (Hours)",
+        "shortname": "life_hours_"
+      },
+      "value": "4000",
+      "units": "hours"
+    },
+    {
+      "attribute": {
+        "name": "Max Operating Temperature",
+        "shortname": "maxoperatingtemperature"
+      },
+      "value": "105",
+      "units": "\u00b0C"
+    },
+    {
+      "attribute": {
+        "name": "Min Operating Temperature",
+        "shortname": "minoperatingtemperature"
+      },
+      "value": "-40",
+      "units": "\u00b0C"
+    },
+    {
+      "attribute": {
+        "name": "Mount",
+        "shortname": "mount"
+      },
+      "value": "Through Hole  ",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Number of Pins",
+        "shortname": "numberofpins"
+      },
+      "value": "2",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Packaging",
+        "shortname": "packaging"
+      },
+      "value": "Bulk",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Radiation Hardening",
+        "shortname": "radiationhardening"
+      },
+      "value": "No",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "REACH SVHC",
+        "shortname": "reachsvhc"
+      },
+      "value": "Unknown",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Ripple Current",
+        "shortname": "ripplecurrent"
+      },
+      "value": "1.43",
+      "units": "A"
+    },
+    {
+      "attribute": {
+        "name": "RoHS",
+        "shortname": "rohs"
+      },
+      "value": "Compliant",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Termination",
+        "shortname": "termination"
+      },
+      "value": "Radial",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Tolerance",
+        "shortname": "tolerance"
+      },
+      "value": "20",
+      "units": "%"
+    },
+    {
+      "attribute": {
+        "name": "Voltage",
+        "shortname": "voltage"
+      },
+      "value": "16",
+      "units": "V"
+    },
+    {
+      "attribute": {
+        "name": "Voltage Rating",
+        "shortname": "voltagerating"
+      },
+      "value": "16",
+      "units": "V"
+    },
+    {
+      "attribute": {
+        "name": "Voltage Rating (AC)",
+        "shortname": "voltagerating_ac_"
+      },
+      "value": "16",
+      "units": "V"
+    },
+    {
+      "attribute": {
+        "name": "Voltage Rating (DC)",
+        "shortname": "voltagerating_dc_"
+      },
+      "value": "16",
+      "units": "V"
+    }
+  ],
+  "sellers": [
+    {
+      "company": {
+        "name": "Onlinecomponents.com"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 1000,
+          "prices": [
+            {
+              "price": 0.2215,
+              "quantity": 1000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.2119,
+              "quantity": 3000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.2087,
+              "quantity": 5000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.2003,
+              "quantity": 8000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.1973,
+              "quantity": 10000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.1924,
+              "quantity": 25000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.1895,
+              "quantity": 50000,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Verical"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 1000,
+          "prices": [
+            {
+              "price": 0.3101,
+              "quantity": 1000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.2967,
+              "quantity": 3000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.2922,
+              "quantity": 5000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.2804,
+              "quantity": 8000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.2762,
+              "quantity": 10000,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Master Electronics"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 1000,
+          "prices": [
+            {
+              "price": 0.2215,
+              "quantity": 1000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.2119,
+              "quantity": 3000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.2087,
+              "quantity": 5000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.2003,
+              "quantity": 8000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.1973,
+              "quantity": 10000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.1924,
+              "quantity": 25000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.1895,
+              "quantity": 50000,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Newark"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 0,
+          "prices": []
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Farnell"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 0,
+          "prices": [
+            {
+              "price": 0.295,
+              "quantity": 1,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.265,
+              "quantity": 50,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.235,
+              "quantity": 100,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.211,
+              "quantity": 250,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.186,
+              "quantity": 500,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.184,
+              "quantity": 1000,
+              "currency": "GBP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "element14 APAC"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 0,
+          "prices": [
+            {
+              "price": 0.977,
+              "quantity": 1,
+              "currency": "SGD"
+            },
+            {
+              "price": 0.614,
+              "quantity": 10,
+              "currency": "SGD"
+            },
+            {
+              "price": 0.41,
+              "quantity": 100,
+              "currency": "SGD"
+            },
+            {
+              "price": 0.326,
+              "quantity": 500,
+              "currency": "SGD"
+            },
+            {
+              "price": 0.32,
+              "quantity": 1000,
+              "currency": "SGD"
+            },
+            {
+              "price": 0.313,
+              "quantity": 2000,
+              "currency": "SGD"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
