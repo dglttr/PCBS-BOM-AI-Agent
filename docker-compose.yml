@@ -1,0 +1,66 @@
+services:
+  reverse-proxy:
+    image: traefik:v3.0
+    container_name: traefik
+    command:
+      - "--api.dashboard=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:8080"
+      - "--log.level=DEBUG"
+      - "--accesslog=true"
+    ports:
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    networks:
+      - traefik-proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.dashboard.rule=Host(`traefik.localhost`)"
+      - "traefik.http.routers.dashboard.service=api@internal"
+      - "traefik.http.routers.dashboard.middlewares=simple-auth"
+      - "traefik.http.middlewares.simple-auth.basicauth.users=admin:$$apr1$$Hf/6Iubi$$QhCFR2lQ5nbd7ItKUCf131"
+
+  backend:
+    container_name: backend
+    restart: always
+    image: ${BACKEND_IMAGE:-ai-chat-backend}
+    networks:
+      - default
+      - traefik-proxy
+    env_file:
+      - .env
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.backend.entrypoints=web"
+      - "traefik.http.routers.backend.rule=PathPrefix(`/api`)"
+      - "traefik.http.routers.backend.priority=2"
+      - "traefik.http.routers.backend.middlewares=backend-stripprefix,simple-auth"
+      - "traefik.http.middlewares.backend-stripprefix.stripprefix.prefixes=/api"
+      - "traefik.http.services.backend.loadbalancer.server.port=8000"
+      - "traefik.docker.network=traefik-proxy"
+
+  frontend:
+    container_name: frontend
+    restart: always
+    image: ${FRONTEND_IMAGE:-ai-chat-frontend}
+    networks:
+      - default
+      - traefik-proxy
+    environment:
+      - NEXT_PUBLIC_BACKEND_URL=/api
+      - NEXT_TELEMETRY_DISABLED=1
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.entrypoints=web"
+      - "traefik.http.routers.frontend.rule=PathPrefix(`/`)"
+      - "traefik.http.routers.frontend.priority=1"
+      - "traefik.http.routers.frontend.middlewares=simple-auth"
+      - "traefik.http.services.frontend.loadbalancer.server.port=3000"
+      - "traefik.docker.network=traefik-proxy"
+
+networks:
+  default:
+  traefik-proxy:
+    name: traefik-proxy

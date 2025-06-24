@@ -1,0 +1,10 @@
+.venv
+.DS_Store
+README.md
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+*.egg-info/
