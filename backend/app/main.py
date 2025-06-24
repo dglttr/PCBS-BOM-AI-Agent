@@ -35,25 +35,22 @@ available_tools = {
 }
 
 master_prompt = """
-You are "B.O.M.B.A.", an expert manufacturing analyst. Your goal is to help the user process their Bill of Materials (BOM), find cost-saving alternatives, and present a comprehensive analysis.
+You are "B.O.M.B.A.", an expert manufacturing analyst. Your goal is to help the user process a batch of Bill of Materials (BOM) files.
 
 **Your Reasoning Process:**
 
-1.  **Acknowledge and Question:** When the user uploads a file, they will provide a `job_id`. Acknowledge the file and begin a friendly conversation to gather project requirements. Do NOT mention the `job_id`. You MUST ask for:
+1.  **Acknowledge and Question:** When the user uploads files, they will provide a list of `bom_job_ids`. Acknowledge the batch of files and begin a friendly conversation to gather project requirements for the entire batch. You MUST ask for:
     *   The project's industry (e.g., Automotive, Consumer Electronics).
-    *   The total order quantity.
+    *   The total order quantity for this production run.
     *   Any other critical performance requirements.
 
-2.  **Get the Data:** Once you have the assumptions, call the `get_bom_data_with_alternatives` tool, passing only the `job_id`.
+2.  **Get the Data (In a Loop):** Once you have the assumptions, you MUST iterate through the list of `bom_job_ids`. For EACH `job_id` in the list, you must call the `get_bom_data_with_alternatives` tool.
 
-3.  **Synthesize and Recommend:** The tool will return a list of parsed parts, including potential alternatives. Now, perform a holistic analysis of all this data in a single reasoning step. Your final response should be a well-structured markdown report that includes:
-    *   A brief, friendly summary of the process.
-    *   For each part in the BOM:
-        *   Clearly state the original part's details.
-        *   Evaluate its alternatives based on the user's assumptions. Make intelligent trade-offs between specs, price, and availability.
-        *   State your final recommendation (either the original part or the best alternative).
-        *   Provide clear, concise reasoning for your choice.
-    *   Conclude with an overall summary of potential cost savings.
+3.  **Synthesize and Recommend:** After you have called the tool for every job ID and have all the results, perform a holistic analysis. Your final response should be a single, comprehensive markdown report that includes a section for EACH BOM file you processed. For each BOM:
+    *   Start with a clear header (e.g., "Analysis for bom1.xlsx").
+    *   For each part in that BOM, state its details and evaluate its alternatives based on the project assumptions.
+    *   State your final recommendation for that part and your reasoning.
+    *   Conclude with an overall summary of potential cost savings for the entire batch.
 """
 
 async def stream_text(messages: List[ChatCompletionMessageParam], protocol: str = "data"):
@@ -122,7 +119,7 @@ async def stream_text(messages: List[ChatCompletionMessageParam], protocol: str 
             # The tool result for BOM data can be very large. We'll summarize it for the next LLM call
             # to avoid exceeding token limits, while keeping the full data for the final response.
             if tool_name == "get_bom_data_with_alternatives":
-                summary = f"Successfully processed {len(tool_result)} parts. The data is now available for analysis."
+                summary = f"Successfully processed BOM data for job {tool_args.get('job_id')}. {len(tool_result)} parts found."
                 tool_content = summary
             else:
                 tool_content = json.dumps(tool_result)
@@ -147,4 +144,18 @@ async def stream_text(messages: List[ChatCompletionMessageParam], protocol: str 
 async def handle_chat_data(request: Request, protocol: str = Query("data")):
     messages = request.messages
     openai_messages = convert_to_openai_messages(messages)
+
+    # We need to manually "unwrap" the user message if it was a BOM request
+    # so the LLM doesn't see the JSON structure.
+    if openai_messages and openai_messages[-1]["role"] == "user":
+        try:
+            content_data = json.loads(str(openai_messages[-1]["content"]))
+            if "bom_job_ids" in content_data:
+                # This is a BOM request, format it for the agent
+                job_ids_str = ", ".join(content_data["bom_job_ids"])
+                text = content_data.get("text", "Processing files")
+                openai_messages[-1]["content"] = f"{text}\n\n[Internal note: The job IDs for these files are: {job_ids_str}]"
+        except (json.JSONDecodeError, TypeError):
+            pass # Not a BOM request, proceed normally
+
     return StreamingResponse(stream_text(openai_messages, protocol))

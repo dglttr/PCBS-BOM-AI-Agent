@@ -32,6 +32,12 @@ const suggestedActions = [
   },
 ];
 
+interface UploadResult {
+    job_id: string;
+    filename: string;
+    file_path: string;
+}
+
 export function MultimodalInput({
   input,
   setInput,
@@ -42,8 +48,8 @@ export function MultimodalInput({
   append,
   handleSubmit,
   className,
-  file,
-  setFile,
+  files,
+  setFiles,
 }: {
   input: string;
   setInput: (value: string) => void;
@@ -62,8 +68,8 @@ export function MultimodalInput({
     chatRequestOptions?: ChatRequestOptions,
   ) => void;
   className?: string;
-  file: File | null;
-  setFile: Dispatch<SetStateAction<File | null>>;
+  files: File[];
+  setFiles: Dispatch<SetStateAction<File[]>>;
 }) {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -104,14 +110,15 @@ export function MultimodalInput({
   }, [input, setLocalStorageInput]);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const selectedFile = event.target.files?.[0];
-    if (selectedFile) {
-        // Limit file size to 10MB
-        if (selectedFile.size > 10 * 1024 * 1024) {
-            toast.error("File size cannot exceed 10MB.");
+    const selectedFiles = event.target.files;
+    if (selectedFiles) {
+        const newFiles = Array.from(selectedFiles);
+        if (files.length + newFiles.length > 10) {
+            toast.error("You can upload a maximum of 10 files.");
             return;
         }
-        setFile(selectedFile);
+        // You might want to check file size for each file here as well
+        setFiles(prev => [...prev, ...newFiles]);
     }
   };
   
@@ -121,12 +128,11 @@ export function MultimodalInput({
   };
 
   const submitForm = useCallback(async () => {
-    if (!input && !file) return;
+    if (!input && files.length === 0) return;
 
-    if (file) {
-        // If a file is attached, upload it first
+    if (files.length > 0) {
         const formData = new FormData();
-        formData.append("file", file);
+        files.forEach(f => formData.append("files", f));
 
         try {
             const response = await fetch('/api/bom/upload', {
@@ -140,12 +146,12 @@ export function MultimodalInput({
                 return;
             }
 
-            const { job_id, filename } = await response.json();
+            const uploadResults: UploadResult[] = await response.json();
             
-            // Append a message to the chat that includes the job_id in the content
+            const fileListText = files.map(f => f.name).join(', ');
             const messageData = {
-                text: input || `Processing file: ${filename}`,
-                bom_job_id: job_id
+                text: input || `Processing files: ${fileListText}`,
+                bom_job_ids: uploadResults.map((res) => res.job_id)
             };
 
             append({
@@ -153,8 +159,7 @@ export function MultimodalInput({
                 content: JSON.stringify(messageData),
             });
 
-            // Clear file and input after successful submission
-            setFile(null);
+            setFiles([]);
             setInput('');
             setLocalStorageInput("");
 
@@ -163,7 +168,6 @@ export function MultimodalInput({
             console.error(error);
         }
     } else {
-        // Default behavior if no file is attached
         if (!input) return;
         handleSubmit(undefined, {});
         setLocalStorageInput("");
@@ -173,7 +177,7 @@ export function MultimodalInput({
     if (width && width > 768) {
       textareaRef.current?.focus();
     }
-  }, [handleSubmit, setLocalStorageInput, width, append, input, file]);
+  }, [handleSubmit, setLocalStorageInput, width, append, input, files]);
 
   return (
     <div className="relative w-full flex flex-col gap-4">
@@ -208,25 +212,29 @@ export function MultimodalInput({
         </div>
       )}
 
-      {file && (
-        <div className="flex items-center gap-2 bg-muted text-sm border rounded-lg px-3 py-1.5">
-          <PaperclipIcon />
-          <span className="flex-1 truncate">{file.name}</span>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="size-6"
-            onClick={() => setFile(null)}
-          >
-            <CrossIcon size={14} />
-          </Button>
+      {files.length > 0 && (
+        <div className="flex flex-wrap gap-2 mb-2">
+            {files.map((file, index) => (
+                <div key={index} className="flex items-center gap-2 bg-muted text-sm border rounded-lg px-3 py-1.5">
+                    <PaperclipIcon size={14} />
+                    <span className="flex-1 truncate">{file.name}</span>
+                    <Button
+                        variant="ghost"
+                        size="icon"
+                        className="size-6"
+                        onClick={() => setFiles(prev => prev.filter((_, i) => i !== index))}
+                    >
+                        <CrossIcon size={14} />
+                    </Button>
+                </div>
+            ))}
         </div>
       )}
 
       <div className="relative">
         <Textarea
           ref={textareaRef}
-          placeholder={file ? "Describe the context for this BOM..." : "Send a message..."}
+          placeholder={files.length > 0 ? "Describe the context for these BOMs..." : "Send a message..."}
           value={input}
           onChange={handleInput}
           className={cn(
@@ -254,6 +262,7 @@ export function MultimodalInput({
           onChange={handleFileChange}
           className="hidden"
           accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+          multiple
         />
 
         <Button
@@ -261,7 +270,7 @@ export function MultimodalInput({
           size="icon"
           className="absolute bottom-2 left-2 m-0.5"
           onClick={() => fileInputRef.current?.click()}
-          disabled={isLoading || !!file}
+          disabled={isLoading || files.length >= 10}
         >
           <PaperclipIcon />
         </Button>
@@ -284,7 +293,7 @@ export function MultimodalInput({
               event.preventDefault();
               submitForm();
             }}
-            disabled={input.length === 0 && !file}
+            disabled={input.length === 0 && files.length === 0}
           >
             <ArrowUpIcon size={14} />
           </Button>

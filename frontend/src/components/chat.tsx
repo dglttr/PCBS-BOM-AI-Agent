@@ -23,7 +23,7 @@ interface QuestionnaireData {
 }
 
 export function Chat() {
-  const [file, setFile] = useState<File | null>(null);
+  const [files, setFiles] = useState<File[]>([]);
   const [isDragging, setIsDragging] = useState(false);
   const [bomResult, setBomResult] = useState<BomProcessingResult | null>(null);
   const [questionnaire, setQuestionnaire] = useState<QuestionnaireData | null>(null);
@@ -77,9 +77,13 @@ export function Chat() {
             toast.error("File size cannot exceed 10MB.");
             return;
         }
-        setFile(droppedFile);
+        if (files.length + 1 > 10) {
+            toast.error("You can upload a maximum of 10 files.");
+            return;
+        }
+        setFiles(prevFiles => [...prevFiles, droppedFile]);
     }
-  }, []);
+  }, [files.length]);
 
   const displayMessages = useMemo(() => {
     return messages.map((msg) => {
@@ -220,8 +224,8 @@ export function Chat() {
           messages={messages}
           setMessages={setMessages}
           append={append}
-          file={file}
-          setFile={setFile}
+          files={files}
+          setFiles={setFiles}
         />
       </form>
     </div>
