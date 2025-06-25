@@ -33,7 +33,8 @@ if not NEXAR_API_KEY:
 # It retrieves detailed specs, datasheets, and pricing information.
 SEARCH_MPN_QUERY = """
 query SearchByMpn($mpn: String!) {
-  supSearch(q: $mpn) {
+  supSearchMpn(q: $mpn, limit: 1) {
+    hits
     results {
       part {
         mpn
@@ -51,32 +52,48 @@ query SearchByMpn($mpn: String!) {
           units
         }
         similarParts {
-            mpn
-            octopartUrl
-            manufacturer {
-                name
+          name
+          mpn
+          manufacturer {
+            name
+            id
+          }
+          descriptions {
+            text
+          }
+          specs {
+            attribute {
+              name
             }
-            shortDescription
-            specs {
-                attribute {
-                    name
-                }
-                value
-                units
+            value
+            siValue
+            units
+            unitsName
+          }
+          category {
+            id
+            name
+            relevantAttributes {
+              name
+              valueType
+              unitsName
             }
-            sellers(authorizedOnly: true) {
-                company {
-                    name
-                }
-                offers {
-                    inventoryLevel
-                    prices {
-                        price
-                        quantity
-                        currency
-                    }
-                }
+          }
+          sellers(authorizedOnly: true) {
+            country
+            company {
+              id
+              name
             }
+            offers {
+              prices {
+                quantity
+                convertedPrice
+                convertedCurrency
+              }
+            }
+          }
+          estimatedFactoryLeadDays
         }
         sellers(authorizedOnly: true) {
           company {
@@ -144,7 +161,7 @@ async def find_part_by_mpn(mpn: str, sema: asyncio.Semaphore):
                 logger.error(f"Octopart API returned errors for {mpn}: {data['errors']}")
                 return None
             
-            results = data.get("data", {}).get("supSearch", {}).get("results", [])
+            results = data.get("data", {}).get("supSearchMpn", {}).get("results", [])
             part_data = results[0]['part'] if results else None
 
             # 3. Write to cache if successful and data is found

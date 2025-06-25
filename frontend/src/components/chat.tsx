@@ -11,16 +11,16 @@ import { BomDisplay } from "./bom-display";
 import { BomQuestionnaire } from "./bom-questionnaire";
 import { BomProcessingResult, isBomProcessingResult } from "@/lib/types";
 
+interface QuestionnaireData {
+    jobId: string;
+    questions: string[];
+}
+
 const ALLOWED_FILE_TYPES = [
     "text/csv",
     "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
     "application/vnd.ms-excel",
   ];
-
-interface QuestionnaireData {
-    jobId: string;
-    questions: string[];
-}
 
 export function Chat() {
   const [files, setFiles] = useState<File[]>([]);
@@ -58,7 +58,6 @@ export function Chat() {
 
   const handleDragLeave = useCallback((event: React.DragEvent<HTMLDivElement>) => {
     event.preventDefault();
-    // Use relatedTarget to prevent flickering when dragging over child elements
     if (!event.currentTarget.contains(event.relatedTarget as Node)) {
         setIsDragging(false);
     }
@@ -67,94 +66,75 @@ export function Chat() {
   const handleDrop = useCallback((event: React.DragEvent<HTMLDivElement>) => {
     event.preventDefault();
     setIsDragging(false);
-    const droppedFile = event.dataTransfer.files[0];
-    if (droppedFile) {
-        if (!ALLOWED_FILE_TYPES.includes(droppedFile.type)) {
-            toast.error("Invalid file type. Please upload a CSV or Excel file.");
-            return;
-        }
-        if (droppedFile.size > 10 * 1024 * 1024) {
-            toast.error("File size cannot exceed 10MB.");
-            return;
-        }
-        if (files.length + 1 > 10) {
+    const droppedFiles = Array.from(event.dataTransfer.files);
+    if (droppedFiles.length > 0) {
+        if (files.length + droppedFiles.length > 10) {
             toast.error("You can upload a maximum of 10 files.");
             return;
         }
-        setFiles(prevFiles => [...prevFiles, droppedFile]);
+        setFiles(prevFiles => [...prevFiles, ...droppedFiles]);
     }
   }, [files.length]);
 
-  const displayMessages = useMemo(() => {
-    return messages.map((msg) => {
-      if (msg.role === 'user') {
-        try {
-          const parsedContent = JSON.parse(msg.content);
-          if (parsedContent.text) {
-            return { ...msg, content: parsedContent.text };
-          }
-        } catch {
-          // Not JSON, return original
-        }
-      }
-      return msg;
-    });
-  }, [messages]);
+    const displayMessages = useMemo(() => {
+        return messages.map((msg) => {
+            if (msg.role === 'user') {
+                try {
+                    const parsedContent = JSON.parse(msg.content);
+                    if (parsedContent.text) {
+                        return { ...msg, content: parsedContent.text };
+                    }
+                } catch {
+                    // Not JSON, return original
+                }
+            }
+            return msg;
+        });
+    }, [messages]);
 
-  // Effect to process messages for special commands
-  useEffect(() => {
-    const lastMessage = messages[messages.length - 1];
-    if (lastMessage && lastMessage.role === 'assistant') {
-      try {
-        const parsedContent = JSON.parse(lastMessage.content);
-        if (parsedContent?.type === 'bom_questionnaire' && parsedContent.data) {
-          setQuestionnaire({
-            jobId: parsedContent.data.job_id,
-            questions: parsedContent.data.questions,
-          });
-          setBomResult(null); // Clear previous results
+    useEffect(() => {
+        const lastMessage = messages[messages.length - 1];
+        if (lastMessage && lastMessage.role === 'assistant') {
+            try {
+                const parsedContent = JSON.parse(lastMessage.content);
+                if (parsedContent?.type === 'bom_questionnaire' && parsedContent.data) {
+                    setQuestionnaire({
+                        jobId: parsedContent.data.job_id,
+                        questions: parsedContent.data.questions,
+                    });
+                    setBomResult(null);
+                } else if (parsedContent?.type === 'bom_result' && isBomProcessingResult(parsedContent.data)) {
+                    setBomResult(parsedContent.data);
+                    if (parsedContent.data.results.processing_error) {
+                        toast.error("BOM Processing Warning", {
+                            description: parsedContent.data.results.processing_error,
+                        });
+                    }
+                }
+            } catch {
+                // Not our special command, do nothing
+            }
         }
-      } catch {
-        // Not our special command, do nothing
-      }
-    }
-  }, [messages]);
+    }, [messages]);
 
   const handleQuestionnaireSubmit = useCallback(async (answers: Record<string, string>) => {
     if (!questionnaire) return;
     setIsProcessing(true);
-    setQuestionnaire(null); // Hide questionnaire form
+    setQuestionnaire(null);
 
-    try {
-        const response = await fetch(`/api/bom/process/${questionnaire.jobId}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ assumptions: answers }),
-        });
+    const messageData = {
+        text: "Here are my project requirements. Please proceed with the analysis.",
+        assumptions: answers,
+        bom_job_ids: [questionnaire.jobId] // The agent expects a list
+    };
 
-        if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.detail || "Failed to process BOM.");
-        }
+    append({
+        role: 'user',
+        content: JSON.stringify(messageData),
+    });
 
-        const resultData = await response.json();
-        if (isBomProcessingResult(resultData)) {
-            setBomResult(resultData);
-            if (resultData.results.processing_error) {
-                toast.error("BOM Processing Warning", {
-                    description: resultData.results.processing_error,
-                });
-            }
-        } else {
-            throw new Error("Received unexpected data structure from server.");
-        }
-    } catch (error) {
-        const errorMessage = error instanceof Error ? error.message : "An unknown error occurred.";
-        toast.error("Processing Failed", { description: errorMessage });
-    } finally {
-        setIsProcessing(false);
-    }
-  }, [questionnaire]);
+    setIsProcessing(false);
+  }, [questionnaire, append]);
 
   const [messagesContainerRef, messagesEndRef] =
     useScrollToBottom<HTMLDivElement>();
@@ -163,14 +143,14 @@ export function Chat() {
     <div 
         className="relative flex flex-col min-w-0 h-[calc(100dvh-52px)] bg-background"
         onDragEnter={handleDragEnter}
-        onDragOver={(e) => e.preventDefault()} // Necessary to allow dropping
+        onDragOver={(e) => e.preventDefault()}
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
     >
         {isDragging && (
             <div className="absolute inset-0 z-10 bg-black/50 flex items-center justify-center rounded-lg border-2 border-dashed border-primary">
                 <p className="text-primary-foreground text-lg font-semibold">
-                    Drop BOM file here
+                    Drop BOM files here
                 </p>
             </div>
         )}
@@ -181,10 +161,9 @@ export function Chat() {
         {displayMessages.length === 0 && <Overview />}
 
         {displayMessages.map((message: Message, index: number) => {
-          // Hide the assistant message that contains the raw questionnaire data
           try {
             const parsed = JSON.parse(message.content)
-            if (parsed.type === 'bom_questionnaire') return null;
+            if (parsed.type === 'bom_questionnaire' || parsed.type === 'bom_result') return null;
           } catch {}
 
           return (

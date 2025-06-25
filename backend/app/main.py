@@ -1,7 +1,7 @@
 import os
 import json
 import logging
-from typing import List, Optional
+from typing import List, Optional, cast
 from openai.types.chat.chat_completion_message_param import ChatCompletionMessageParam
 from pydantic import BaseModel
 from dotenv import load_dotenv
@@ -10,127 +10,160 @@ from fastapi.responses import StreamingResponse
 from openai import AsyncOpenAI
 from .utils.prompt import ClientMessage, convert_to_openai_messages
 from .bom.router import router as bom_router
-from .bom.service import process_bom_data
+from .bom.logic import get_bom_data_with_alternatives, evaluate_alternative
+from .llm import client
+import asyncio
 
 load_dotenv()
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
 
 app = FastAPI(root_path="/api")
 app.include_router(bom_router)
 
-client = AsyncOpenAI(
-    api_key=os.environ.get("GEMINI_API_KEY"),
-    base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
-)
+# In-memory cache for BOM data
+bom_data_cache = {}
 
 model = "gemini-2.5-flash-preview-05-20"
+# model ="o4-mini-2025-04-16"
 
 class Request(BaseModel):
     id: Optional[str] = None
     messages: List[ClientMessage]
 
 available_tools = {
-    "get_bom_data_with_alternatives": process_bom_data,
+    "get_bom_data_with_alternatives": get_bom_data_with_alternatives,
+    "evaluate_alternative": evaluate_alternative,
 }
 
 master_prompt = """
-You are "B.O.M.B.A.", an expert manufacturing analyst. Your goal is to help the user process a batch of Bill of Materials (BOM) files.
+You are "B.O.M.B.A.", an expert manufacturing analyst. Your goal is to help the user process their Bill of Materials (BOM), find cost-saving alternatives, and present a comprehensive analysis.
 
 **Your Reasoning Process:**
 
-1.  **Acknowledge and Question:** When the user uploads files, they will provide a list of `bom_job_ids`. Acknowledge the batch of files and begin a friendly conversation to gather project requirements for the entire batch. You MUST ask for:
+1.  **Acknowledge and Question:** When the user uploads a file, they will provide a `job_id`. Acknowledge the file and begin a friendly conversation to gather project requirements. Do NOT mention the `job_id`. You MUST ask for:
     *   The project's industry (e.g., Automotive, Consumer Electronics).
     *   The total order quantity for this production run.
     *   Any other critical performance requirements.
 
-2.  **Get the Data (In a Loop):** Once you have the assumptions, you MUST iterate through the list of `bom_job_ids`. For EACH `job_id` in the list, you must call the `get_bom_data_with_alternatives` tool.
+2.  **Get the Data:** Once you have the assumptions, call the `get_bom_data_with_alternatives` tool, passing only the `job_id`.
 
-3.  **Synthesize and Recommend:** After you have called the tool for every job ID and have all the results, perform a holistic analysis. Your final response should be a single, comprehensive markdown report that includes a section for EACH BOM file you processed. For each BOM:
-    *   Start with a clear header (e.g., "Analysis for bom1.xlsx").
-    *   For each part in that BOM, state its details and evaluate its alternatives based on the project assumptions.
-    *   State your final recommendation for that part and your reasoning.
-    *   Conclude with an overall summary of potential cost savings for the entire batch.
+3.  **Synthesize and Recommend:** A Python function will automatically evaluate all alternatives and provide you with a structured list of validation results. Your final task is to synthesize all this information into a single, comprehensive summary for the user.
+    *   Start with a friendly, conversational summary.
+    *   For each part in the BOM for which you have evaluation results:
+        *   Clearly state the original part's details.
+        *   Summarize the evaluation findings for its alternatives. Make intelligent trade-offs between specs, price, and availability based on the validation results.
+        *   State your final recommendation (either the original part or the best alternative).
+        *   Provide clear, concise reasoning for your choice.
+    *   Conclude with an overall summary of potential cost savings.
+    *   **If a tool returns an error, do not proceed with the analysis.** Apologize to the user, state the error message you received, and ask them to verify their file or input.
 """
 
 async def stream_text(messages: List[ChatCompletionMessageParam], protocol: str = "data"):
+    """
+    Main agent logic.
+    1.  Calls the LLM to understand user intent and get initial tool calls.
+    2.  If `get_bom_data_with_alternatives` is called, it triggers a Python-based
+        orchestration loop to evaluate all alternatives concurrently.
+    3.  Sends all evaluation results back to the LLM for final synthesis.
+    """
     conversation_history: List[ChatCompletionMessageParam] = [{"role": "system", "content": master_prompt}]
     conversation_history.extend(messages)
 
-    logging.info("Agent loop started. Waiting for LLM response...")
-    stream = await client.chat.completions.create(
+    logging.info("Agent loop started. Waiting for LLM to decide on initial tool call...")
+    response = await client.chat.completions.create(
         messages=conversation_history,
         model=model,
-        stream=True,
+        stream=False, # We need the full message to check for tool calls
         tools=[
             {
                 "type": "function",
                 "function": {
                     "name": "get_bom_data_with_alternatives",
-                    "description": "Parses a BOM file and enriches it with supplier data and potential alternatives.",
+                    "description": "Parses a BOM file and enriches it with supplier data and potential alternatives. This is the first step and MUST be called before any analysis.",
                     "parameters": {
                         "type": "object",
                         "properties": {
                             "job_id": {
                                 "type": "string",
-                                "description": "The unique ID of the BOM file processing job.",
+                                "description": "The unique ID of the BOM file processing job, which is available in the user's message.",
+                            },
+                             "assumptions": {
+                                "type": "object",
+                                "description": "User-provided project assumptions (e.g., industry, quantity).",
                             },
                         },
-                        "required": ["job_id"],
+                        "required": ["job_id", "assumptions"],
                     },
                 },
-            }
+            },
+            # The evaluate_alternative tool is now called by the backend, so it's not listed here for the LLM.
         ],
     )
 
-    tool_calls = []
-    async for chunk in stream:
-        delta = chunk.choices[0].delta
-        if delta.content:
-            yield f"0:{json.dumps(delta.content)}\n"
-        if delta.tool_calls:
-            if not tool_calls:
-                for tc in delta.tool_calls:
-                    if tc.function:
-                        tool_calls.append({"id": tc.id, "type": "function", "function": {"name": tc.function.name, "arguments": tc.function.arguments or ""}})
-            else:
-                for i, tc in enumerate(delta.tool_calls):
-                    if tc.function and tc.function.arguments:
-                        tool_calls[i]["function"]["arguments"] += tc.function.arguments
+    response_message = response.choices[0].message
+    tool_calls = response_message.tool_calls
 
-    if tool_calls:
-        logging.info(f"LLM decided to call {len(tool_calls)} tool(s).")
-        conversation_history.append({"role": "assistant", "tool_calls": tool_calls})
+    if not tool_calls:
+        # No tool call, just stream back the text response
+        yield f"0:{json.dumps(response_message.content)}\n"
+        return
 
-        for tool_call in tool_calls:
-            tool_name = tool_call["function"]["name"]
-            tool_args = json.loads(tool_call["function"]["arguments"])
-            
-            # Ensure only the arguments defined in the tool's schema are passed
-            if tool_name == "get_bom_data_with_alternatives":
-                tool_args = {"job_id": tool_args.get("job_id")}
+    # Add the assistant's response (which contains the tool call) to history
+    conversation_history.append({
+        "role": "assistant",
+        "tool_calls": cast(list, response_message.tool_calls)
+    })
 
-            tool_function = available_tools.get(tool_name)
-            if not tool_function:
-                raise ValueError(f"Tool '{tool_name}' not found.")
-            
-            tool_result = await tool_function(**tool_args)
-            
-            # The tool result for BOM data can be very large. We'll summarize it for the next LLM call
-            # to avoid exceeding token limits, while keeping the full data for the final response.
-            if tool_name == "get_bom_data_with_alternatives":
-                summary = f"Successfully processed BOM data for job {tool_args.get('job_id')}. {len(tool_result)} parts found."
-                tool_content = summary
-            else:
-                tool_content = json.dumps(tool_result)
+    # We are assuming the main flow is to call get_bom_data_with_alternatives
+    # and then the python orchestrator takes over.
+    if tool_calls[0].function.name == "get_bom_data_with_alternatives":
+        logging.info("LLM requested 'get_bom_data_with_alternatives'. Starting Python orchestrator.")
+        
+        # --- Python Orchestrator Logic ---
+        tool_args = json.loads(tool_calls[0].function.arguments)
+        job_id = tool_args.get("job_id")
+        assumptions = tool_args.get("assumptions", {})
 
-            conversation_history.append({
-                "role": "tool",
-                "tool_call_id": tool_call["id"],
-                "content": tool_content,
-            })
+        # 1. Get the summary of parts to evaluate
+        summary = await get_bom_data_with_alternatives(job_id=job_id, cache=bom_data_cache)
 
-        logging.info("Sending tool results back to LLM for final response.")
+        # 2. Create evaluation tasks for all alternatives
+        evaluation_tasks = []
+        for part in summary:
+            if part.get("has_alternatives") == "Yes":
+                original_mpn = part.get("manufacturer_part_number")
+                if not original_mpn:
+                    continue
+                for alt_mpn in part.get("alternatives", []):
+                    evaluation_tasks.append(
+                        evaluate_alternative(
+                            job_id=job_id,
+                            original_mpn=original_mpn,
+                            alternative_mpn=alt_mpn,
+                            assumptions=assumptions,
+                            cache=bom_data_cache
+                        )
+                    )
+        
+        # 3. Run all evaluations concurrently
+        logging.info(f"Starting concurrent evaluation of {len(evaluation_tasks)} alternatives...")
+        evaluation_results = await asyncio.gather(*evaluation_tasks, return_exceptions=True)
+        logging.info("All evaluations complete.")
+
+        # 4. Add all evaluation results as a single tool message to the conversation history
+        conversation_history.append({
+            "role": "tool",
+            "tool_call_id": tool_calls[0].id,
+            "content": json.dumps([
+                res.model_dump() if not isinstance(res, BaseException) else {"error": str(res)} 
+                for res in evaluation_results
+            ]),
+        })
+        
+        # 5. Final synthesis call to the LLM
+        logging.info("Sending all evaluation results to LLM for final synthesis.")
         final_stream = await client.chat.completions.create(
             model=model,
             stream=True,
@@ -139,6 +172,11 @@ async def stream_text(messages: List[ChatCompletionMessageParam], protocol: str 
         async for chunk in final_stream:
             if chunk.choices[0].delta.content:
                 yield f"0:{json.dumps(chunk.choices[0].delta.content)}\n"
+
+    else:
+        # Fallback for any other tool calls (though none are defined for the LLM right now)
+        logging.warning(f"Unhandled tool call: {tool_calls[0].function.name}")
+        yield f"0:{json.dumps('An unexpected tool was called by the agent.')}\n"
 
 @app.post("/chat")
 async def handle_chat_data(request: Request, protocol: str = Query("data")):
@@ -155,6 +193,8 @@ async def handle_chat_data(request: Request, protocol: str = Query("data")):
                 job_ids_str = ", ".join(content_data["bom_job_ids"])
                 text = content_data.get("text", "Processing files")
                 openai_messages[-1]["content"] = f"{text}\n\n[Internal note: The job IDs for these files are: {job_ids_str}]"
+            elif "bom_job_id" in content_data:
+                 openai_messages[-1]["content"] = f"{content_data.get('text', 'Processing file')}\n\n[Internal note: The job ID for this file is: {content_data['bom_job_id']}]"
         except (json.JSONDecodeError, TypeError):
             pass # Not a BOM request, proceed normally
 

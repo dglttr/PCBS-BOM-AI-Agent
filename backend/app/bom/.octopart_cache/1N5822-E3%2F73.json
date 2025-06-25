@@ -406,6 +406,48 @@
       "sellers": [
         {
           "company": {
+            "name": "Verical"
+          },
+          "offers": [
+            {
+              "inventoryLevel": 9500,
+              "prices": [
+                {
+                  "price": 0.0911,
+                  "quantity": 5700,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.0902,
+                  "quantity": 9500,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 2779,
+              "prices": [
+                {
+                  "price": 0.103,
+                  "quantity": 72,
+                  "currency": "USD"
+                }
+              ]
+            },
+            {
+              "inventoryLevel": 110516,
+              "prices": [
+                {
+                  "price": 0.1452,
+                  "quantity": 85,
+                  "currency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "company": {
             "name": "Arrow Electronics"
           },
           "offers": [
@@ -498,48 +540,6 @@
         },
         {
           "company": {
-            "name": "Verical"
-          },
-          "offers": [
-            {
-              "inventoryLevel": 9500,
-              "prices": [
-                {
-                  "price": 0.0911,
-                  "quantity": 5700,
-                  "currency": "USD"
-                },
-                {
-                  "price": 0.0902,
-                  "quantity": 9500,
-                  "currency": "USD"
-                }
-              ]
-            },
-            {
-              "inventoryLevel": 2779,
-              "prices": [
-                {
-                  "price": 0.103,
-                  "quantity": 72,
-                  "currency": "USD"
-                }
-              ]
-            },
-            {
-              "inventoryLevel": 110500,
-              "prices": [
-                {
-                  "price": 0.1447,
-                  "quantity": 85,
-                  "currency": "USD"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "company": {
             "name": "Mouser"
           },
           "offers": [
@@ -586,7 +586,7 @@
           },
           "offers": [
             {
-              "inventoryLevel": 19343,
+              "inventoryLevel": 19333,
               "prices": [
                 {
                   "price": 0.26,
@@ -1209,22 +1209,22 @@
               "inventoryLevel": 900,
               "prices": [
                 {
-                  "price": 0.662,
-                  "quantity": 96,
-                  "currency": "USD"
-                },
-                {
                   "price": 0.576,
-                  "quantity": 100,
+                  "quantity": 97,
                   "currency": "USD"
                 },
                 {
                   "price": 0.478,
-                  "quantity": 200,
+                  "quantity": 100,
                   "currency": "USD"
                 },
                 {
                   "price": 0.453,
+                  "quantity": 200,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.38,
                   "quantity": 500,
                   "currency": "USD"
                 }

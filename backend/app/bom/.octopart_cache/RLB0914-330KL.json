@@ -2839,7 +2839,7 @@
               "inventoryLevel": 10000,
               "prices": [
                 {
-                  "price": 0.1016,
+                  "price": 0.1012,
                   "quantity": 2000,
                   "currency": "USD"
                 }
@@ -3309,17 +3309,17 @@
           "inventoryLevel": 4000,
           "prices": [
             {
-              "price": 0.1873,
+              "price": 0.1865,
               "quantity": 600,
               "currency": "USD"
             },
             {
-              "price": 0.1816,
+              "price": 0.1808,
               "quantity": 1000,
               "currency": "USD"
             },
             {
-              "price": 0.1664,
+              "price": 0.1656,
               "quantity": 2600,
               "currency": "USD"
             }

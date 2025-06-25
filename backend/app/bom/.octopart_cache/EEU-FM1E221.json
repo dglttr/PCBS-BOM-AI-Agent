@@ -463,7 +463,7 @@
           },
           "offers": [
             {
-              "inventoryLevel": 2936,
+              "inventoryLevel": 2946,
               "prices": [
                 {
                   "price": 0.44,
@@ -2278,27 +2278,27 @@
               "inventoryLevel": 4882,
               "prices": [
                 {
-                  "price": 0.451,
-                  "quantity": 194,
-                  "currency": "USD"
-                },
-                {
-                  "price": 0.232,
-                  "quantity": 200,
-                  "currency": "USD"
-                },
-                {
                   "price": 0.206,
-                  "quantity": 500,
+                  "quantity": 197,
                   "currency": "USD"
                 },
                 {
                   "price": 0.205,
-                  "quantity": 1000,
+                  "quantity": 200,
                   "currency": "USD"
                 },
                 {
                   "price": 0.161,
+                  "quantity": 500,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.147,
+                  "quantity": 1000,
+                  "currency": "USD"
+                },
+                {
+                  "price": 0.136,
                   "quantity": 2000,
                   "currency": "USD"
                 }
@@ -3136,7 +3136,7 @@
       },
       "offers": [
         {
-          "inventoryLevel": 4678,
+          "inventoryLevel": 4664,
           "prices": [
             {
               "price": 0.48,
@@ -3258,82 +3258,82 @@
           "inventoryLevel": 140,
           "prices": [
             {
-              "price": 0.7296,
+              "price": 0.7259,
               "quantity": 5,
               "currency": "CNY"
             },
             {
-              "price": 0.0889,
+              "price": 0.0884,
               "quantity": 5,
               "currency": "EUR"
             },
             {
-              "price": 0.7964,
+              "price": 0.7925,
               "quantity": 5,
               "currency": "HKD"
             },
             {
-              "price": 0.0998,
+              "price": 0.0993,
               "quantity": 5,
               "currency": "USD"
             },
             {
-              "price": 0.7135,
+              "price": 0.7098,
               "quantity": 50,
               "currency": "CNY"
             },
             {
-              "price": 0.0869,
+              "price": 0.0865,
               "quantity": 50,
               "currency": "EUR"
             },
             {
-              "price": 0.7789,
+              "price": 0.7749,
               "quantity": 50,
               "currency": "HKD"
             },
             {
-              "price": 0.0976,
+              "price": 0.0971,
               "quantity": 50,
               "currency": "USD"
             },
             {
-              "price": 0.7033,
+              "price": 0.6989,
               "quantity": 150,
               "currency": "CNY"
             },
             {
-              "price": 0.0857,
+              "price": 0.0851,
               "quantity": 150,
               "currency": "EUR"
             },
             {
-              "price": 0.7677,
+              "price": 0.7629,
               "quantity": 150,
               "currency": "HKD"
             },
             {
-              "price": 0.0962,
+              "price": 0.0956,
               "quantity": 150,
               "currency": "USD"
             },
             {
-              "price": 0.6484,
+              "price": 0.6433,
               "quantity": 500,
               "currency": "CNY"
             },
             {
-              "price": 0.079,
+              "price": 0.0784,
               "quantity": 500,
               "currency": "EUR"
             },
             {
-              "price": 0.7079,
+              "price": 0.7023,
               "quantity": 500,
               "currency": "HKD"
             },
             {
-              "price": 0.0887,
+              "price": 0.088,
               "quantity": 500,
               "currency": "USD"
             }
@@ -3381,11 +3381,6 @@
         {
           "inventoryLevel": 949,
           "prices": [
-            {
-              "price": 0.109,
-              "quantity": 336,
-              "currency": "USD"
-            },
             {
               "price": 0.109,
               "quantity": 340,
@@ -3892,7 +3887,7 @@
       },
       "offers": [
         {
-          "inventoryLevel": 427,
+          "inventoryLevel": 327,
           "prices": [
             {
               "price": 0.497,
