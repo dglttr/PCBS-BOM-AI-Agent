@@ -7,6 +7,14 @@ Resistors should have the following certifications:
 The following suppliers are preferred: 
 - Element14
 
+Known information about supplier reliability: 
+- Element14: very highly reliable
+- Future Electronics: low reliability
+- Farnell: medium reliability
+- Chip One Stop: high reliability
+- Core Staff: medium reliability
+- Rutronik: high reliability
+
 The following countries should be avoided: 
 - Russia
 - Ukraine
