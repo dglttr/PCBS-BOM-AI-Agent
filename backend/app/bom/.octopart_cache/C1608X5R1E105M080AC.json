@@ -1,0 +1,5404 @@
+{
+  "mpn": "C1608X5R1E105M080AC",
+  "manufacturer": {
+    "name": "TDK"
+  },
+  "shortDescription": "25V 1uF X5R \u536420% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+  "octopartUrl": "https://octopart.com/c1608x5r1e105m080ac-tdk-26013489",
+  "specs": [
+    {
+      "attribute": {
+        "name": "Capacitance",
+        "shortname": "capacitance"
+      },
+      "value": "1",
+      "units": "\u00b5F"
+    },
+    {
+      "attribute": {
+        "name": "Case/Package",
+        "shortname": "case_package"
+      },
+      "value": "0603",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Case Code (Imperial)",
+        "shortname": "casecode_imperial_"
+      },
+      "value": "0603",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Case Code (Metric)",
+        "shortname": "casecode_metric_"
+      },
+      "value": "1608",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Composition",
+        "shortname": "composition"
+      },
+      "value": "Ceramic",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Depth",
+        "shortname": "depth"
+      },
+      "value": "800",
+      "units": "\u00b5m"
+    },
+    {
+      "attribute": {
+        "name": "Dielectric",
+        "shortname": "dielectric"
+      },
+      "value": "X5R",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Dielectric Material",
+        "shortname": "dielectricmaterial"
+      },
+      "value": "Ceramic",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Height",
+        "shortname": "height"
+      },
+      "value": "900",
+      "units": "\u00b5m"
+    },
+    {
+      "attribute": {
+        "name": "Lead Free",
+        "shortname": "leadfree"
+      },
+      "value": "Lead Free",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Length",
+        "shortname": "length"
+      },
+      "value": "1.6",
+      "units": "mm"
+    },
+    {
+      "attribute": {
+        "name": "Lifecycle Status",
+        "shortname": "lifecyclestatus"
+      },
+      "value": "NRND",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Manufacturer Lifecycle Status",
+        "shortname": "manufacturerlifecyclestatus"
+      },
+      "value": "PRODUCTION (NOT RECOMMENDED FOR NEW DESIGN)",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Material",
+        "shortname": "material"
+      },
+      "value": "Ceramic",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Max Length",
+        "shortname": "maxlength"
+      },
+      "value": "1.7",
+      "units": "mm"
+    },
+    {
+      "attribute": {
+        "name": "Max Operating Temperature",
+        "shortname": "maxoperatingtemperature"
+      },
+      "value": "85",
+      "units": "\u00b0C"
+    },
+    {
+      "attribute": {
+        "name": "Max Width",
+        "shortname": "maxwidth"
+      },
+      "value": "900",
+      "units": "\u00b5m"
+    },
+    {
+      "attribute": {
+        "name": "Min Length",
+        "shortname": "minlength"
+      },
+      "value": "1.5",
+      "units": "mm"
+    },
+    {
+      "attribute": {
+        "name": "Min Operating Temperature",
+        "shortname": "minoperatingtemperature"
+      },
+      "value": "-55",
+      "units": "\u00b0C"
+    },
+    {
+      "attribute": {
+        "name": "Min Width",
+        "shortname": "minwidth"
+      },
+      "value": "700",
+      "units": "\u00b5m"
+    },
+    {
+      "attribute": {
+        "name": "Mount",
+        "shortname": "mount"
+      },
+      "value": "Surface Mount  ",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "REACH SVHC",
+        "shortname": "reachsvhc"
+      },
+      "value": "No",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "RoHS",
+        "shortname": "rohs"
+      },
+      "value": "Compliant",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Schedule B",
+        "shortname": "scheduleB"
+      },
+      "value": "8532240020, 8532240020|8532240020|8532240020|8532240020|8532240020",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Termination",
+        "shortname": "termination"
+      },
+      "value": "SMD/SMT",
+      "units": ""
+    },
+    {
+      "attribute": {
+        "name": "Tolerance",
+        "shortname": "tolerance"
+      },
+      "value": "20",
+      "units": "%"
+    },
+    {
+      "attribute": {
+        "name": "Voltage Rating",
+        "shortname": "voltagerating"
+      },
+      "value": "25",
+      "units": "V"
+    },
+    {
+      "attribute": {
+        "name": "Voltage Rating (DC)",
+        "shortname": "voltagerating_dc_"
+      },
+      "value": "25",
+      "units": "V"
+    },
+    {
+      "attribute": {
+        "name": "Weight",
+        "shortname": "weight"
+      },
+      "value": "2.012816",
+      "units": "mg"
+    },
+    {
+      "attribute": {
+        "name": "Width",
+        "shortname": "width"
+      },
+      "value": "800",
+      "units": "\u00b5m"
+    }
+  ],
+  "similarParts": [
+    {
+      "name": "KYOCERA AVX 06033D105MAT2A",
+      "mpn": "06033D105MAT2A",
+      "manufacturer": {
+        "name": "KYOCERA AVX",
+        "id": "7738"
+      },
+      "descriptions": [
+        {
+          "text": "25V 1uF X5R \u00b120% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+        },
+        {
+          "text": "0603 1 uF 25 V \u00b120 % Tolerance X5R SMT Multilayer Ceramic Capacitor"
+        },
+        {
+          "text": "0603 1000nF Ceramic Multilayer Capacitor, 25 VDC, +85degC, X5R Dielec, +/-20% | AVX 06033D105MAT2A"
+        },
+        {
+          "text": "Cap Ceramic 1uF 25V X5R 20% SMD 0603 85\u00b0C Paper T/R"
+        },
+        {
+          "text": "0603 (1608Metric) ceramic capacitor 25V 1muF \u00b120% X5R"
+        },
+        {
+          "text": "0603 SMD Ceramic Capacitors 1.0UF 25V 20%"
+        }
+      ],
+      "specs": [
+        {
+          "attribute": {
+            "name": "Capacitance"
+          },
+          "value": "1",
+          "siValue": "1e-06",
+          "units": "\u00b5F",
+          "unitsName": "farad"
+        },
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Imperial)"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Metric)"
+          },
+          "value": "1608",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Contact Plating"
+          },
+          "value": "Tin",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Depth"
+          },
+          "value": "810",
+          "siValue": "0.00081",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Dielectric"
+          },
+          "value": "X5R",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Dielectric Material"
+          },
+          "value": "Ceramic",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "940",
+          "siValue": "0.00094",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "1.6",
+          "siValue": "0.0016",
+          "units": "mm",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Lifecycle Status"
+          },
+          "value": "Production",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Material"
+          },
+          "value": "Ceramic",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "85",
+          "siValue": "358.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-55",
+          "siValue": "218.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "PCB  , Surface Mount  ",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Number of Pins"
+          },
+          "value": "2",
+          "siValue": "2",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Radiation Hardening"
+          },
+          "value": "No",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "REACH SVHC"
+          },
+          "value": "No",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Schedule B"
+          },
+          "value": "8532240020",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Termination"
+          },
+          "value": "SMD/SMT",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Thickness"
+          },
+          "value": "889",
+          "siValue": "0.000889",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "20",
+          "siValue": "20",
+          "units": "%",
+          "unitsName": "percent"
+        },
+        {
+          "attribute": {
+            "name": "Voltage"
+          },
+          "value": "25",
+          "siValue": "25",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating"
+          },
+          "value": "25",
+          "siValue": "25",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating (DC)"
+          },
+          "value": "25",
+          "siValue": "25",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Width"
+          },
+          "value": "812.8",
+          "siValue": "0.0008128",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        }
+      ],
+      "category": {
+        "id": "6332",
+        "name": "Ceramic Capacitors",
+        "relevantAttributes": [
+          {
+            "name": "Capacitance",
+            "valueType": "float",
+            "unitsName": "farad"
+          },
+          {
+            "name": "Dielectric",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Mount",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Case/Package",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Voltage Rating (DC)",
+            "valueType": "float",
+            "unitsName": "volt"
+          },
+          {
+            "name": "Tolerance",
+            "valueType": "float",
+            "unitsName": "percent"
+          },
+          {
+            "name": "Height",
+            "valueType": "float",
+            "unitsName": "meter"
+          }
+        ]
+      },
+      "sellers": [
+        {
+          "country": "CA",
+          "company": {
+            "id": "2454",
+            "name": "Future Electronics"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0977,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "DE",
+          "company": {
+            "id": "7667",
+            "name": "Rutronik"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.005740268505408029,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0057,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.00569388249728352,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.0056,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.00569388249728352,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.0056,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 36000,
+                  "convertedPrice": 0.005635899987127883,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 36000,
+                  "convertedPrice": 0.0056,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "459",
+            "name": "DigiKey"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.41,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.169,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.0945,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.41,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.169,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.0945,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.07721,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2401",
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.2,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.113,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.113,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.068,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.049,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.037,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "950",
+            "name": "TTI"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0328,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "PL",
+          "company": {
+            "id": "1532",
+            "name": "TME"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0128,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2402",
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.103,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 25,
+                  "convertedPrice": 0.09,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.077,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.064,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 250,
+                  "convertedPrice": 0.058,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.051,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.047,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.176,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 5000,
+                  "convertedPrice": 0.166,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.146,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.131,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 30000,
+                  "convertedPrice": 0.122,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50000,
+                  "convertedPrice": 0.111,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "SG",
+          "company": {
+            "id": "11867",
+            "name": "TTI Asia"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0244,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.023,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.0226,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.0201,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100000,
+                  "convertedPrice": 0.0171,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "1106",
+            "name": "Arrow Electronics"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0682,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2628",
+            "name": "Avnet"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.01808,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.01781,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.01753,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 24000,
+                  "convertedPrice": 0.01726,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 32000,
+                  "convertedPrice": 0.01692,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.329,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 30,
+                  "convertedPrice": 0.291,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.254,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.216,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "DE",
+          "company": {
+            "id": "11613",
+            "name": "TTI Europe"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.006099760068372977,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.005983795048061702,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.005856233525719302,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.005740268505408029,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 36000,
+                  "convertedPrice": 0.005589513979003373,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "GB",
+          "company": {
+            "id": "7635",
+            "name": "Anglia"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.008965998593195365,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4001,
+                  "convertedPrice": 0.008489807469125808,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8001,
+                  "convertedPrice": 0.00783674535611613,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12001,
+                  "convertedPrice": 0.007278921467920364,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "SG",
+          "company": {
+            "id": "3702",
+            "name": "element14 APAC"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.13116801998750782,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.07885696439725173,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.06246096189881325,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.05699562773266708,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.05387257963772643,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0499687695190506,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.06246096189881325,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.05699562773266708,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.05387257963772643,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0499687695190506,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "GB",
+          "company": {
+            "id": "819",
+            "name": "Farnell"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.10925184932224397,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.0546939519645605,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.05129258679263509,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.043537474200645174,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.04027216363559678,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.036870798463671375,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.05129258679263509,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.043537474200645174,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.04027216363559678,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.036870798463671375,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "estimatedFactoryLeadDays": 56
+    },
+    {
+      "name": "Yageo Group CC0603MRX5R8BB105",
+      "mpn": "CC0603MRX5R8BB105",
+      "manufacturer": {
+        "name": "Yageo Group",
+        "id": "621"
+      },
+      "descriptions": [
+        {
+          "text": "Capacitor, 1UF, 25V, MLCC, 0603; Available until stocks are exhausted Alternative available"
+        },
+        {
+          "text": "0603 1 uF 25 V \u00b120 % Tolerance X5R SMT Multilayer Ceramic Capacitor"
+        },
+        {
+          "text": "Cap, 1Uf, 25V, Mlcc, 0603 Rohs Compliant: Yes |Yageo CC0603MRX5R8BB105"
+        },
+        {
+          "text": "Cap Ceramic 1uF 25V X5R 20% SMD 0603 85\u00b0C Paper T/R"
+        },
+        {
+          "text": "Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+        }
+      ],
+      "specs": [
+        {
+          "attribute": {
+            "name": "Capacitance"
+          },
+          "value": "1",
+          "siValue": "1e-06",
+          "units": "\u00b5F",
+          "unitsName": "farad"
+        },
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Imperial)"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Metric)"
+          },
+          "value": "1608",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Dielectric"
+          },
+          "value": "X5R",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Halogen Free"
+          },
+          "value": "Halogen Free",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "900",
+          "siValue": "0.0009",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "1.6002",
+          "siValue": "0.0016002",
+          "units": "mm",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Material"
+          },
+          "value": "Ceramic",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "125",
+          "siValue": "398.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-55",
+          "siValue": "218.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Surface Mount  ",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Schedule B"
+          },
+          "value": "8532240020, 8532240020|8532240020|8532240020|8532240020|8532240020",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Thickness"
+          },
+          "value": "889",
+          "siValue": "0.000889",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "20",
+          "siValue": "20",
+          "units": "%",
+          "unitsName": "percent"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating"
+          },
+          "value": "25",
+          "siValue": "25",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating (DC)"
+          },
+          "value": "25",
+          "siValue": "25",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Width"
+          },
+          "value": "787.4",
+          "siValue": "0.0007874",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        }
+      ],
+      "category": {
+        "id": "6332",
+        "name": "Ceramic Capacitors",
+        "relevantAttributes": [
+          {
+            "name": "Capacitance",
+            "valueType": "float",
+            "unitsName": "farad"
+          },
+          {
+            "name": "Dielectric",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Mount",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Case/Package",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Voltage Rating (DC)",
+            "valueType": "float",
+            "unitsName": "volt"
+          },
+          {
+            "name": "Tolerance",
+            "valueType": "float",
+            "unitsName": "percent"
+          },
+          {
+            "name": "Height",
+            "valueType": "float",
+            "unitsName": "meter"
+          }
+        ]
+      },
+      "sellers": [
+        {
+          "country": "DE",
+          "company": {
+            "id": "7667",
+            "name": "Rutronik"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 48000,
+                  "convertedPrice": 0.006586813153680324,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 48000,
+                  "convertedPrice": 0.0065,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "459",
+            "name": "DigiKey"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.11,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.059,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.035,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.02295,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.11,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.059,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.035,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.02295,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0187,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.01507,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.01445,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.01435,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 28000,
+                  "convertedPrice": 0.01325,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 40000,
+                  "convertedPrice": 0.01319,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100000,
+                  "convertedPrice": 0.01255,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 200000,
+                  "convertedPrice": 0.01247,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 400000,
+                  "convertedPrice": 0.01226,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2401",
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.1,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.055,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.055,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.033,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.023,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.014,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "1106",
+            "name": "Arrow Electronics"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.0315,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.0208,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 25,
+                  "convertedPrice": 0.0206,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.0196,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 250,
+                  "convertedPrice": 0.0184,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.0172,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.016,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 3000,
+                  "convertedPrice": 0.015,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0145,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2617",
+            "name": "Verical"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0145,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 610,
+                  "convertedPrice": 0.0172,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2402",
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.059,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 25,
+                  "convertedPrice": 0.052,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.044,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.037,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 250,
+                  "convertedPrice": 0.035,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.033,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.027,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.02,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.018,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "950",
+            "name": "TTI"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.00972,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "SG",
+          "company": {
+            "id": "11867",
+            "name": "TTI Asia"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0119,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.0099,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.0096,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 28000,
+                  "convertedPrice": 0.0091,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 52000,
+                  "convertedPrice": 0.0087,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "CA",
+          "company": {
+            "id": "2454",
+            "name": "Future Electronics"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0099,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.0096,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.0095,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 40000,
+                  "convertedPrice": 0.0093,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 60000,
+                  "convertedPrice": 0.009,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2628",
+            "name": "Avnet"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.00998,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.00983,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.00968,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 24000,
+                  "convertedPrice": 0.00953,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 32000,
+                  "convertedPrice": 0.00938,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "DE",
+          "company": {
+            "id": "11613",
+            "name": "TTI Europe"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 24000,
+                  "convertedPrice": 0.0067723571861783615,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "GB",
+          "company": {
+            "id": "819",
+            "name": "Farnell"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.05823137174336291,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.036870798463671375,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.03238099643672985,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.025714320699756054,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.025170102272247988,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.03238099643672985,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.025714320699756054,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.025170102272247988,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.02013608181779839,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "SG",
+          "company": {
+            "id": "3702",
+            "name": "element14 APAC"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.06168019987507808,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.037476577139287946,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.032792004996876956,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.025765146783260466,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.0249843847595253,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.032792004996876956,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.025765146783260466,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.0249843847595253,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.020299812617114305,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.016396002498438478,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 40000,
+                  "convertedPrice": 0.014834478450968145,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "estimatedFactoryLeadDays": 112
+    },
+    {
+      "name": "TDK CGA3E3X5R1E105M080AB",
+      "mpn": "CGA3E3X5R1E105M080AB",
+      "manufacturer": {
+        "name": "TDK",
+        "id": "600"
+      },
+      "descriptions": [
+        {
+          "text": "Cap, Aec-Q200, 1Uf, 25V, Mlcc, 0603 Rohs Compliant: Yes |Tdk CGA3E3X5R1E105M080AB"
+        },
+        {
+          "text": "Multilayer Ceramic Chip Capacitors, Capacitance=1\u03bcF, LxWxT:1.6x0.8x0.8mm"
+        },
+        {
+          "text": "Cap Ceramic 1uF 25V X5R 20% Pad SMD 0603 85C Low ESR Automotive T/R"
+        },
+        {
+          "text": "CGA Series 0603 1 uF 25 V \u00b120 %Tolerance X5R SMT Multilayer Ceramic Capacitor"
+        },
+        {
+          "text": "Cap Ceramic 1uF 25V X5R 20% SMD 0603 85\u00b0C Punched Paper T/R"
+        },
+        {
+          "text": "EIA CASE SIZE: 0603, VOLTAGE: 25, CAP VALUE: 105, TOL: +/-20%, THICKNESS: 0.80 \u00b1 0.10"
+        },
+        {
+          "text": "CGA CERAMIC CAPACITOR 0603 (1608Metric) Ceramic Capacitor 0.063Lx0.031W 1.60mmx0.80mm X5R \u00b120% 1muF"
+        }
+      ],
+      "specs": [
+        {
+          "attribute": {
+            "name": "Capacitance"
+          },
+          "value": "1",
+          "siValue": "1e-06",
+          "units": "\u00b5F",
+          "unitsName": "farad"
+        },
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Imperial)"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Metric)"
+          },
+          "value": "1608",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Dielectric"
+          },
+          "value": "X5R",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "1.1",
+          "siValue": "0.0011",
+          "units": "mm",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "1.6",
+          "siValue": "0.0016",
+          "units": "mm",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Lifecycle Status"
+          },
+          "value": "Production",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Manufacturer Lifecycle Status"
+          },
+          "value": "PRODUCTION",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Material"
+          },
+          "value": "Ceramic",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Max Length"
+          },
+          "value": "1.7",
+          "siValue": "0.0017",
+          "units": "mm",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "85",
+          "siValue": "358.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Max Width"
+          },
+          "value": "900",
+          "siValue": "0.0009",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Min Length"
+          },
+          "value": "1.5",
+          "siValue": "0.0015",
+          "units": "mm",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-55",
+          "siValue": "218.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Min Width"
+          },
+          "value": "700",
+          "siValue": "0.0007",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Surface Mount  ",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Packaging"
+          },
+          "value": "Cut Tape (CT)",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Ratings"
+          },
+          "value": "AEC-Q200",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Thickness"
+          },
+          "value": "889",
+          "siValue": "0.000889",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "20",
+          "siValue": "20",
+          "units": "%",
+          "unitsName": "percent"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating"
+          },
+          "value": "25",
+          "siValue": "25",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating (DC)"
+          },
+          "value": "25",
+          "siValue": "25",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Weight"
+          },
+          "value": "2.012816",
+          "siValue": "0.002012816141875",
+          "units": "mg",
+          "unitsName": "gram"
+        },
+        {
+          "attribute": {
+            "name": "Width"
+          },
+          "value": "800",
+          "siValue": "0.0008",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        }
+      ],
+      "category": {
+        "id": "6332",
+        "name": "Ceramic Capacitors",
+        "relevantAttributes": [
+          {
+            "name": "Capacitance",
+            "valueType": "float",
+            "unitsName": "farad"
+          },
+          {
+            "name": "Dielectric",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Mount",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Case/Package",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Voltage Rating (DC)",
+            "valueType": "float",
+            "unitsName": "volt"
+          },
+          {
+            "name": "Tolerance",
+            "valueType": "float",
+            "unitsName": "percent"
+          },
+          {
+            "name": "Height",
+            "valueType": "float",
+            "unitsName": "meter"
+          }
+        ]
+      },
+      "sellers": [
+        {
+          "country": "US",
+          "company": {
+            "id": "459",
+            "name": "DigiKey"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.18,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.102,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.063,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.04311,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.18,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.102,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.063,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.04311,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.03684,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.03089,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.02969,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.02951,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 28000,
+                  "convertedPrice": 0.02784,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 40000,
+                  "convertedPrice": 0.02774,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100000,
+                  "convertedPrice": 0.027,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 200000,
+                  "convertedPrice": 0.02686,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 400000,
+                  "convertedPrice": 0.02525,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2401",
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.18,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.102,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.102,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.063,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.044,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.029,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2617",
+            "name": "Verical"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1359,
+                  "convertedPrice": 0.0413,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.0354,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2402",
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.113,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 25,
+                  "convertedPrice": 0.1,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.087,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.075,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 250,
+                  "convertedPrice": 0.064,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.054,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "PL",
+          "company": {
+            "id": "1532",
+            "name": "TME"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0295,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.0266,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "CA",
+          "company": {
+            "id": "2454",
+            "name": "Future Electronics"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0273,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.0268,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.0265,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.0264,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.0258,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2628",
+            "name": "Avnet"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.02358,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.02286,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.02214,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 24000,
+                  "convertedPrice": 0.02142,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 32000,
+                  "convertedPrice": 0.0207,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "1106",
+            "name": "Arrow Electronics"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0277,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.0245,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 24000,
+                  "convertedPrice": 0.0235,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 48000,
+                  "convertedPrice": 0.0225,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "GB",
+          "company": {
+            "id": "819",
+            "name": "Farnell"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.11605457966609478,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.07251710546544961,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.0647619928734597,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.04911571308260283,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.044625911055661306,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.040136109028719766,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.0647619928734597,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.04911571308260283,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.044625911055661306,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.040136109028719766,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "SG",
+          "company": {
+            "id": "3702",
+            "name": "element14 APAC"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.09447220487195503,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.06168019987507808,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.056214865708931916,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.05074953154278576,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.04840724547158026,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.04528419737663961,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.03669581511555278,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 40000,
+                  "convertedPrice": 0.03591505309181762,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.056214865708931916,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.05074953154278576,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.04840724547158026,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.04528419737663961,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.03669581511555278,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 40000,
+                  "convertedPrice": 0.03591505309181762,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "GB",
+          "company": {
+            "id": "7635",
+            "name": "Anglia"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.04840822912684235,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4001,
+                  "convertedPrice": 0.04235379912081513,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8001,
+                  "convertedPrice": 0.037659915183558074,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12001,
+                  "convertedPrice": 0.03389120257306473,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16001,
+                  "convertedPrice": 0.03080276299695646,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "estimatedFactoryLeadDays": 168
+    },
+    {
+      "name": "Murata GRM188R61A105MA61D",
+      "mpn": "GRM188R61A105MA61D",
+      "manufacturer": {
+        "name": "Murata",
+        "id": "260"
+      },
+      "descriptions": [
+        {
+          "text": "0603 1 uF 10 V X5R 20 % Tolerance Multilayer Ceramic Capacitor"
+        },
+        {
+          "text": "Cap Ceramic 1uF 10V X5R 20% SMD 0603 85\u00b0C Paper T/R"
+        },
+        {
+          "text": "Capacitor, MLCC, 1UF, X5R, 10V, 0603;"
+        }
+      ],
+      "specs": [
+        {
+          "attribute": {
+            "name": "Capacitance"
+          },
+          "value": "1",
+          "siValue": "1e-06",
+          "units": "\u00b5F",
+          "unitsName": "farad"
+        },
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Imperial)"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Metric)"
+          },
+          "value": "1608",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Depth"
+          },
+          "value": "800",
+          "siValue": "0.0008",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Dielectric"
+          },
+          "value": "X5R",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "800",
+          "siValue": "0.0008",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "1.6",
+          "siValue": "0.0016",
+          "units": "mm",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Lifecycle Status"
+          },
+          "value": "NRND",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Manufacturer Lifecycle Status"
+          },
+          "value": "NRND",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "85",
+          "siValue": "358.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-55",
+          "siValue": "218.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Surface Mount  ",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Packaging"
+          },
+          "value": "Cut Tape",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Radiation Hardening"
+          },
+          "value": "No",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "REACH SVHC"
+          },
+          "value": "No",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Termination"
+          },
+          "value": "SMD/SMT",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Thickness"
+          },
+          "value": "800",
+          "siValue": "0.0008",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "20",
+          "siValue": "20",
+          "units": "%",
+          "unitsName": "percent"
+        },
+        {
+          "attribute": {
+            "name": "Voltage"
+          },
+          "value": "10",
+          "siValue": "10",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating"
+          },
+          "value": "10",
+          "siValue": "10",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating (DC)"
+          },
+          "value": "10",
+          "siValue": "10",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Width"
+          },
+          "value": "800",
+          "siValue": "0.0008",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        }
+      ],
+      "category": {
+        "id": "6332",
+        "name": "Ceramic Capacitors",
+        "relevantAttributes": [
+          {
+            "name": "Capacitance",
+            "valueType": "float",
+            "unitsName": "farad"
+          },
+          {
+            "name": "Dielectric",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Mount",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Case/Package",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Voltage Rating (DC)",
+            "valueType": "float",
+            "unitsName": "volt"
+          },
+          {
+            "name": "Tolerance",
+            "valueType": "float",
+            "unitsName": "percent"
+          },
+          {
+            "name": "Height",
+            "valueType": "float",
+            "unitsName": "meter"
+          }
+        ]
+      },
+      "sellers": [
+        {
+          "country": "US",
+          "company": {
+            "id": "2617",
+            "name": "Verical"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.021,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "1106",
+            "name": "Arrow Electronics"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0209,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2402",
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.152,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 25,
+                  "convertedPrice": 0.134,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.116,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.098,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 250,
+                  "convertedPrice": 0.093,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.087,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.082,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "PL",
+          "company": {
+            "id": "1532",
+            "name": "TME"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0079,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "SG",
+          "company": {
+            "id": "3702",
+            "name": "element14 APAC"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.031230480949406624,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.02420362273579013,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.02108057464084947,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.020299812617114305,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.01951905059337914,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.01795752654590881,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.02108057464084947,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.020299812617114305,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.01951905059337914,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.01795752654590881,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "GB",
+          "company": {
+            "id": "819",
+            "name": "Farnell"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.16870771252750003,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.10816341246722785,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.09931986302022179,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.09034025896633874,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.08598651154627422,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.08149670951933269,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.09931986302022179,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.09034025896633874,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.08598651154627422,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.08149670951933269,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "estimatedFactoryLeadDays": null
+    },
+    {
+      "name": "Taiyo Yuden EMK107BJ105MA-T",
+      "mpn": "EMK107BJ105MA-T",
+      "manufacturer": {
+        "name": "Taiyo Yuden",
+        "id": "598"
+      },
+      "descriptions": [
+        {
+          "text": "Multilayer Ceramic Capacitors (High dielectric type), 16V, 1 uF, \u00b1 20 %, 0603, X5R, RoHS"
+        },
+        {
+          "text": "Cap ,mlcc ,0603,16V ,x5R,1Uf20% Rohs Compliant: Yes |Taiyo Yuden EMK107BJ105MA-T"
+        },
+        {
+          "text": "Cap Ceramic 1uF 16V X5R 20% Pad SMD 0603 85C T/R"
+        }
+      ],
+      "specs": [
+        {
+          "attribute": {
+            "name": "Capacitance"
+          },
+          "value": "1",
+          "siValue": "1e-06",
+          "units": "\u00b5F",
+          "unitsName": "farad"
+        },
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Imperial)"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Metric)"
+          },
+          "value": "1608",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Composition"
+          },
+          "value": "Ceramic",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Depth"
+          },
+          "value": "800",
+          "siValue": "0.0008",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Dielectric"
+          },
+          "value": "X5R",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Halogen Free"
+          },
+          "value": "Halogen Free",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "900",
+          "siValue": "0.0009",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "1.6",
+          "siValue": "0.0016",
+          "units": "mm",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Max Length"
+          },
+          "value": "1.7",
+          "siValue": "0.0017",
+          "units": "mm",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "85",
+          "siValue": "358.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Max Thickness"
+          },
+          "value": "900",
+          "siValue": "0.0009",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Max Width"
+          },
+          "value": "900",
+          "siValue": "0.0009",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Min Length"
+          },
+          "value": "1.5",
+          "siValue": "0.0015",
+          "units": "mm",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-55",
+          "siValue": "218.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Min Thickness"
+          },
+          "value": "700",
+          "siValue": "0.0007",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Min Width"
+          },
+          "value": "700",
+          "siValue": "0.0007",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Surface Mount  ",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Packaging"
+          },
+          "value": "Tape & Reel (TR)",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Radiation Hardening"
+          },
+          "value": "No",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Termination"
+          },
+          "value": "SMD/SMT",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Thickness"
+          },
+          "value": "889",
+          "siValue": "0.000889",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "20",
+          "siValue": "20",
+          "units": "%",
+          "unitsName": "percent"
+        },
+        {
+          "attribute": {
+            "name": "Voltage"
+          },
+          "value": "16",
+          "siValue": "16",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating"
+          },
+          "value": "16",
+          "siValue": "16",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating (DC)"
+          },
+          "value": "16",
+          "siValue": "16",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Weight"
+          },
+          "value": "2.012816",
+          "siValue": "0.002012816141875",
+          "units": "mg",
+          "unitsName": "gram"
+        },
+        {
+          "attribute": {
+            "name": "Width"
+          },
+          "value": "800",
+          "siValue": "0.0008",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        }
+      ],
+      "category": {
+        "id": "6332",
+        "name": "Ceramic Capacitors",
+        "relevantAttributes": [
+          {
+            "name": "Capacitance",
+            "valueType": "float",
+            "unitsName": "farad"
+          },
+          {
+            "name": "Dielectric",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Mount",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Case/Package",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Voltage Rating (DC)",
+            "valueType": "float",
+            "unitsName": "volt"
+          },
+          {
+            "name": "Tolerance",
+            "valueType": "float",
+            "unitsName": "percent"
+          },
+          {
+            "name": "Height",
+            "valueType": "float",
+            "unitsName": "meter"
+          }
+        ]
+      },
+      "sellers": [
+        {
+          "country": "US",
+          "company": {
+            "id": "459",
+            "name": "DigiKey"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.1,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.039,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.0228,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.01449,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.1,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.039,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.0228,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.01449,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.01096,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.00869,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.0081,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.00804,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 28000,
+                  "convertedPrice": 0.00747,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 40000,
+                  "convertedPrice": 0.00744,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100000,
+                  "convertedPrice": 0.00736,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 200000,
+                  "convertedPrice": 0.00731,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 400000,
+                  "convertedPrice": 0.00715,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2429",
+            "name": "Onlinecomponents.com"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0101,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.008,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 28000,
+                  "convertedPrice": 0.0075,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 52000,
+                  "convertedPrice": 0.0073,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100000,
+                  "convertedPrice": 0.0073,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 152000,
+                  "convertedPrice": 0.0071,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500000,
+                  "convertedPrice": 0.007,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2591",
+            "name": "Master Electronics"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0101,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.008,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 28000,
+                  "convertedPrice": 0.0075,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 52000,
+                  "convertedPrice": 0.0073,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100000,
+                  "convertedPrice": 0.0073,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 152000,
+                  "convertedPrice": 0.0071,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500000,
+                  "convertedPrice": 0.007,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2617",
+            "name": "Verical"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.0141,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.0112,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 28000,
+                  "convertedPrice": 0.0105,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 52000,
+                  "convertedPrice": 0.0102,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100000,
+                  "convertedPrice": 0.0102,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2401",
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.1,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.034,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.034,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.02,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.015,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.008,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "950",
+            "name": "TTI"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0105,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.0087,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.008,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 28000,
+                  "convertedPrice": 0.0075,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 52000,
+                  "convertedPrice": 0.0073,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 152000,
+                  "convertedPrice": 0.0071,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2402",
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.02,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 5000,
+                  "convertedPrice": 0.018,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.014,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2628",
+            "name": "Avnet"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.00784,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.0078,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.00776,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 24000,
+                  "convertedPrice": 0.00772,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 32000,
+                  "convertedPrice": 0.00768,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "1106",
+            "name": "Arrow Electronics"
+          },
+          "offers": [
+            {
+              "prices": []
+            }
+          ]
+        }
+      ],
+      "estimatedFactoryLeadDays": 77
+    },
+    {
+      "name": "Yageo Group CC0603MRX5R5BB105",
+      "mpn": "CC0603MRX5R5BB105",
+      "manufacturer": {
+        "name": "Yageo Group",
+        "id": "621"
+      },
+      "descriptions": [
+        {
+          "text": "0603 1 uF 6.3 V \u00b120 % Tolerance X5R SMT Multilayer Ceramic Capacitor"
+        },
+        {
+          "text": "Cap, 1Uf, 6.3V, Mlcc, 0603 Rohs Compliant: Yes |Yageo CC0603MRX5R5BB105"
+        },
+        {
+          "text": "Cap Ceramic 1uF 6.3V X5R 20% SMD 0603 85C Paper T/R"
+        }
+      ],
+      "specs": [
+        {
+          "attribute": {
+            "name": "Capacitance"
+          },
+          "value": "1",
+          "siValue": "1e-06",
+          "units": "\u00b5F",
+          "unitsName": "farad"
+        },
+        {
+          "attribute": {
+            "name": "Case/Package"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Imperial)"
+          },
+          "value": "0603",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Case Code (Metric)"
+          },
+          "value": "1608",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Composition"
+          },
+          "value": "Ceramic",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Depth"
+          },
+          "value": "800",
+          "siValue": "0.0008",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Dielectric"
+          },
+          "value": "X5R",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Halogen Free"
+          },
+          "value": "Halogen Free",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Height"
+          },
+          "value": "900",
+          "siValue": "0.0009",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Lead Free"
+          },
+          "value": "Lead Free",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Length"
+          },
+          "value": "1.6002",
+          "siValue": "0.0016002",
+          "units": "mm",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Material"
+          },
+          "value": "Ceramic",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Max Operating Temperature"
+          },
+          "value": "125",
+          "siValue": "398.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Min Operating Temperature"
+          },
+          "value": "-55",
+          "siValue": "218.15",
+          "units": "\u00b0C",
+          "unitsName": "deg_c"
+        },
+        {
+          "attribute": {
+            "name": "Mount"
+          },
+          "value": "Surface Mount  ",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Number of Pins"
+          },
+          "value": "2",
+          "siValue": "2",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Packaging"
+          },
+          "value": "Tape & Reel (TR)",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "RoHS"
+          },
+          "value": "Compliant",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Schedule B"
+          },
+          "value": "8532240020, 8532240020|8532240020|8532240020|8532240020|8532240020",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Termination"
+          },
+          "value": "SMD/SMT",
+          "siValue": "",
+          "units": "",
+          "unitsName": ""
+        },
+        {
+          "attribute": {
+            "name": "Thickness"
+          },
+          "value": "889",
+          "siValue": "0.000889",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        },
+        {
+          "attribute": {
+            "name": "Tolerance"
+          },
+          "value": "20",
+          "siValue": "20",
+          "units": "%",
+          "unitsName": "percent"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating"
+          },
+          "value": "6.3",
+          "siValue": "6.3",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Voltage Rating (DC)"
+          },
+          "value": "6.3",
+          "siValue": "6.3",
+          "units": "V",
+          "unitsName": "volt"
+        },
+        {
+          "attribute": {
+            "name": "Weight"
+          },
+          "value": "2.012816",
+          "siValue": "0.002012816141875",
+          "units": "mg",
+          "unitsName": "gram"
+        },
+        {
+          "attribute": {
+            "name": "Width"
+          },
+          "value": "787.4",
+          "siValue": "0.0007874",
+          "units": "\u00b5m",
+          "unitsName": "meter"
+        }
+      ],
+      "category": {
+        "id": "6332",
+        "name": "Ceramic Capacitors",
+        "relevantAttributes": [
+          {
+            "name": "Capacitance",
+            "valueType": "float",
+            "unitsName": "farad"
+          },
+          {
+            "name": "Dielectric",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Mount",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Case/Package",
+            "valueType": "text",
+            "unitsName": ""
+          },
+          {
+            "name": "Voltage Rating (DC)",
+            "valueType": "float",
+            "unitsName": "volt"
+          },
+          {
+            "name": "Tolerance",
+            "valueType": "float",
+            "unitsName": "percent"
+          },
+          {
+            "name": "Height",
+            "valueType": "float",
+            "unitsName": "meter"
+          }
+        ]
+      },
+      "sellers": [
+        {
+          "country": "CA",
+          "company": {
+            "id": "2454",
+            "name": "Future Electronics"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0091,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.0088,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.0087,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 40000,
+                  "convertedPrice": 0.0085,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 60000,
+                  "convertedPrice": 0.0083,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "459",
+            "name": "DigiKey"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.13,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.074,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.0449,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.02998,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.13,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.074,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.0449,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.02998,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.02473,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.02278,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.02181,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.02072,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 28000,
+                  "convertedPrice": 0.02009,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 40000,
+                  "convertedPrice": 0.01949,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100000,
+                  "convertedPrice": 0.01818,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 200000,
+                  "convertedPrice": 0.01739,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 400000,
+                  "convertedPrice": 0.01674,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2429",
+            "name": "Onlinecomponents.com"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 7500,
+                  "convertedPrice": 0.016,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 25000,
+                  "convertedPrice": 0.015,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50000,
+                  "convertedPrice": 0.0144,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100000,
+                  "convertedPrice": 0.0139,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 150000,
+                  "convertedPrice": 0.0136,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 250000,
+                  "convertedPrice": 0.0134,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500000,
+                  "convertedPrice": 0.013,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2401",
+            "name": "Mouser"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.12,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.071,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.071,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.042,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.03,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.023,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "1106",
+            "name": "Arrow Electronics"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.0198,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.0134,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 25,
+                  "convertedPrice": 0.0117,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.0095,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0133,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.0126,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 12000,
+                  "convertedPrice": 0.0084,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 20000,
+                  "convertedPrice": 0.0083,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "PL",
+          "company": {
+            "id": "1532",
+            "name": "TME"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.0219,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2402",
+            "name": "Newark"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.072,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 25,
+                  "convertedPrice": 0.062,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.053,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.043,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 250,
+                  "convertedPrice": 0.042,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.041,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.031,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "2628",
+            "name": "Avnet"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.00915,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 8000,
+                  "convertedPrice": 0.00901,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 16000,
+                  "convertedPrice": 0.00887,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 24000,
+                  "convertedPrice": 0.00873,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 32000,
+                  "convertedPrice": 0.00859,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "SG",
+          "company": {
+            "id": "3702",
+            "name": "element14 APAC"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.06870705808869457,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.04059962523422861,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.03591505309181762,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.030449718925671457,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.027326670830730797,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.02420362273579013,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.03591505309181762,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.030449718925671457,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.027326670830730797,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.02420362273579013,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "GB",
+          "company": {
+            "id": "819",
+            "name": "Farnell"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.0791837812024234,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.04680278476569356,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.044625911055661306,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.033469433291745974,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.030204122726697587,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.026802757554772183,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            },
+            {
+              "prices": [
+                {
+                  "quantity": 500,
+                  "convertedPrice": 0.044625911055661306,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.033469433291745974,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.030204122726697587,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4000,
+                  "convertedPrice": 0.026802757554772183,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "estimatedFactoryLeadDays": 119
+    }
+  ],
+  "sellers": [
+    {
+      "company": {
+        "name": "DigiKey"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 25798,
+          "prices": [
+            {
+              "price": 0.12,
+              "quantity": 1,
+              "currency": "USD"
+            },
+            {
+              "price": 0.064,
+              "quantity": 10,
+              "currency": "USD"
+            },
+            {
+              "price": 0.0386,
+              "quantity": 100,
+              "currency": "USD"
+            },
+            {
+              "price": 0.02546,
+              "quantity": 1000,
+              "currency": "USD"
+            }
+          ]
+        },
+        {
+          "inventoryLevel": 25798,
+          "prices": [
+            {
+              "price": 0.12,
+              "quantity": 1,
+              "currency": "USD"
+            },
+            {
+              "price": 0.064,
+              "quantity": 10,
+              "currency": "USD"
+            },
+            {
+              "price": 0.0386,
+              "quantity": 100,
+              "currency": "USD"
+            },
+            {
+              "price": 0.02546,
+              "quantity": 1000,
+              "currency": "USD"
+            }
+          ]
+        },
+        {
+          "inventoryLevel": 24000,
+          "prices": [
+            {
+              "price": 0.02127,
+              "quantity": 4000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.01719,
+              "quantity": 8000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.01551,
+              "quantity": 12000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.0154,
+              "quantity": 20000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.01377,
+              "quantity": 28000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.01371,
+              "quantity": 40000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.01358,
+              "quantity": 100000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.0135,
+              "quantity": 200000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.01343,
+              "quantity": 400000,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Mouser"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 35710,
+          "prices": [
+            {
+              "price": 0.12,
+              "quantity": 1,
+              "currency": "USD"
+            },
+            {
+              "price": 0.064,
+              "quantity": 10,
+              "currency": "USD"
+            },
+            {
+              "price": 0.064,
+              "quantity": 50,
+              "currency": "USD"
+            },
+            {
+              "price": 0.039,
+              "quantity": 100,
+              "currency": "USD"
+            },
+            {
+              "price": 0.026,
+              "quantity": 1000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.014,
+              "quantity": 10000,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Arrow Electronics"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 806,
+          "prices": [
+            {
+              "price": 0.0186,
+              "quantity": 806,
+              "currency": "USD"
+            }
+          ]
+        },
+        {
+          "inventoryLevel": 4000,
+          "prices": [
+            {
+              "price": 0.0113,
+              "quantity": 4000,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Verical"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 4000,
+          "prices": [
+            {
+              "price": 0.0113,
+              "quantity": 4000,
+              "currency": "USD"
+            }
+          ]
+        },
+        {
+          "inventoryLevel": 806,
+          "prices": [
+            {
+              "price": 0.0186,
+              "quantity": 806,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "TTI"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 132000,
+          "prices": [
+            {
+              "price": 0.0125,
+              "quantity": 4000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.0123,
+              "quantity": 8000,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Avnet"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 0,
+          "prices": [
+            {
+              "price": 0.01156,
+              "quantity": 4000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.01128,
+              "quantity": 8000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.011,
+              "quantity": 16000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.01091,
+              "quantity": 24000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.01085,
+              "quantity": 32000,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Future Electronics"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 0,
+          "prices": [
+            {
+              "price": 0.0143,
+              "quantity": 4000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.0141,
+              "quantity": 8000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.0139,
+              "quantity": 16000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.0138,
+              "quantity": 20000,
+              "currency": "USD"
+            },
+            {
+              "price": 0.0133,
+              "quantity": 60000,
+              "currency": "USD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Newark"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 0,
+          "prices": []
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "element14 APAC"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 0,
+          "prices": [
+            {
+              "price": 0.048,
+              "quantity": 1,
+              "currency": "SGD"
+            },
+            {
+              "price": 0.035,
+              "quantity": 10,
+              "currency": "SGD"
+            },
+            {
+              "price": 0.029,
+              "quantity": 100,
+              "currency": "SGD"
+            },
+            {
+              "price": 0.028,
+              "quantity": 500,
+              "currency": "SGD"
+            },
+            {
+              "price": 0.026,
+              "quantity": 1000,
+              "currency": "SGD"
+            },
+            {
+              "price": 0.023,
+              "quantity": 2000,
+              "currency": "SGD"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": {
+        "name": "Farnell"
+      },
+      "offers": [
+        {
+          "inventoryLevel": 0,
+          "prices": [
+            {
+              "price": 0.116,
+              "quantity": 1,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.0491,
+              "quantity": 25,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.0446,
+              "quantity": 50,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.0402,
+              "quantity": 100,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.0348,
+              "quantity": 250,
+              "currency": "GBP"
+            },
+            {
+              "price": 0.0286,
+              "quantity": 500,
+              "currency": "GBP"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

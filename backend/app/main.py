@@ -49,7 +49,7 @@ You are "B.O.M.B.A.", an expert manufacturing analyst. Your goal is to help the 
 
 2.  **Get the Data:** Once you have the assumptions, call the `get_bom_data_with_alternatives` tool, passing only the `job_id`.
 
-3.  **Synthesize and Recommend:** A Python function will automatically evaluate all alternatives and provide you with a structured list of validation results. Your final task is to synthesize all this information into a single, comprehensive summary for the user.
+3.  **Synthesize and Recommend:** A Python function will automatically evaluate all alternatives and provide you with a structured list of evaluation bundles. Each bundle contains the simplified original part, the simplified alternative part, and the validation result. Your final task is to synthesize all this information into a single, comprehensive summary for the user.
     *   Start with a friendly, conversational summary.
     *   For each part in the BOM for which you have evaluation results:
         *   Clearly state the original part's details.
@@ -121,57 +121,61 @@ async def stream_text(messages: List[ChatCompletionMessageParam], protocol: str 
     if tool_calls[0].function.name == "get_bom_data_with_alternatives":
         logging.info("LLM requested 'get_bom_data_with_alternatives'. Starting Python orchestrator.")
         
-        # --- Python Orchestrator Logic ---
-        tool_args = json.loads(tool_calls[0].function.arguments)
-        job_id = tool_args.get("job_id")
-        assumptions = tool_args.get("assumptions", {})
+        try:
+            # --- Python Orchestrator Logic ---
+            tool_args = json.loads(tool_calls[0].function.arguments)
+            job_id = tool_args.get("job_id")
+            assumptions = tool_args.get("assumptions", {})
 
-        # 1. Get the summary of parts to evaluate
-        summary = await get_bom_data_with_alternatives(job_id=job_id, cache=bom_data_cache)
+            # 1. Get the summary of parts to evaluate
+            summary = await get_bom_data_with_alternatives(job_id=job_id, cache=bom_data_cache)
 
-        # 2. Create evaluation tasks for all alternatives
-        evaluation_tasks = []
-        for part in summary:
-            if part.get("has_alternatives") == "Yes":
-                original_mpn = part.get("manufacturer_part_number")
-                if not original_mpn:
-                    continue
-                for alt_mpn in part.get("alternatives", []):
-                    evaluation_tasks.append(
-                        evaluate_alternative(
-                            job_id=job_id,
-                            original_mpn=original_mpn,
-                            alternative_mpn=alt_mpn,
-                            assumptions=assumptions,
-                            cache=bom_data_cache
+            # 2. Create evaluation tasks for all alternatives
+            evaluation_tasks = []
+            for part in summary:
+                if part.get("has_alternatives") == "Yes":
+                    original_mpn = part.get("manufacturer_part_number")
+                    if not original_mpn:
+                        continue
+                    for alt_mpn in part.get("alternatives", []):
+                        evaluation_tasks.append(
+                            evaluate_alternative(
+                                job_id=job_id,
+                                original_mpn=original_mpn,
+                                alternative_mpn=alt_mpn,
+                                assumptions=assumptions,
+                                cache=bom_data_cache
+                            )
                         )
-                    )
-        
-        # 3. Run all evaluations concurrently
-        logging.info(f"Starting concurrent evaluation of {len(evaluation_tasks)} alternatives...")
-        evaluation_results = await asyncio.gather(*evaluation_tasks, return_exceptions=True)
-        logging.info("All evaluations complete.")
+            
+            # 3. Run all evaluations concurrently
+            logging.info(f"Starting concurrent evaluation of {len(evaluation_tasks)} alternatives...")
+            evaluation_results = await asyncio.gather(*evaluation_tasks, return_exceptions=True)
+            logging.info("All evaluations complete.")
 
-        # 4. Add all evaluation results as a single tool message to the conversation history
-        conversation_history.append({
-            "role": "tool",
-            "tool_call_id": tool_calls[0].id,
-            "content": json.dumps([
-                res.model_dump() if not isinstance(res, BaseException) else {"error": str(res)} 
-                for res in evaluation_results
-            ]),
-        })
-        
-        # 5. Final synthesis call to the LLM
-        logging.info("Sending all evaluation results to LLM for final synthesis.")
-        final_stream = await client.chat.completions.create(
-            model=model,
-            stream=True,
-            messages=conversation_history,
-        )
-        async for chunk in final_stream:
-            if chunk.choices[0].delta.content:
-                yield f"0:{json.dumps(chunk.choices[0].delta.content)}\n"
+            # 4. Add all evaluation results as a single tool message to the conversation history
+            conversation_history.append({
+                "role": "tool",
+                "tool_call_id": tool_calls[0].id,
+                "content": json.dumps([
+                    res if not isinstance(res, BaseException) else {"error": str(res)} 
+                    for res in evaluation_results
+                ]),
+            })
+            
+            # 5. Final synthesis call to the LLM
+            logging.info("Sending all evaluation results to LLM for final synthesis.")
+            final_stream = await client.chat.completions.create(
+                model=model,
+                stream=True,
+                messages=conversation_history,
+            )
+            async for chunk in final_stream:
+                if chunk.choices[0].delta.content:
+                    yield f"0:{json.dumps(chunk.choices[0].delta.content)}\n"
+        except Exception as e:
+            logger.error(f"Error during agent orchestration: {e}", exc_info=True)
+            yield f"0:{json.dumps({'error': str(e)})}\n"
 
     else:
         # Fallback for any other tool calls (though none are defined for the LLM right now)
