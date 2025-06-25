@@ -1,138 +1,92 @@
-# AI SDK Python Streaming POC
+# Conversational BOM Analyst
 
-This repository contains a proof-of-concept monorepo demonstrating how to stream chat completions from a Python (FastAPI) backend to a Next.js frontend using the Vercel AI SDK.
+This repository contains an advanced, conversational AI agent designed to assist with the procurement and analysis of electronic components for manufacturing. The agent, named **B.O.M.B.A.** (BOM Processing and Management Bot Assistant), intelligently processes Bill of Materials (BOM) files, finds cost-saving alternatives, and presents its findings in a clear, human-readable report.
 
-## Features
+This project was built to tackle the "PCBA BOM Processing" hackathon challenge, demonstrating a modern, tool-calling AI architecture.
 
-- **Streaming API:** The backend streams chat completions using the AI SDK's data stream protocol.
-- **Function Calling:** The chatbot can call functions, for example, to get the current weather.
-- **Modern UI:** The frontend is built with Next.js, shadcn/ui, and Tailwind CSS.
+## Key Features
+
+- **Conversational Interface:** Instead of static forms, the user interacts with the agent through a natural, back-and-forth conversation to define project requirements.
+- **Dynamic Requirement Gathering:** The agent intelligently asks clarifying questions based on the content of the uploaded BOM to understand the specific needs of the project.
+- **Multi-File Upload:** Supports uploading and processing up to 10 BOM files at once via drag-and-drop or a file selector.
+- **AI-Powered Validation:** Uses a powerful LLM (Google's Gemini 2.5 Pro) to evaluate potential alternative parts against the project's requirements, making nuanced, context-aware decisions.
+- **Automated Data Enrichment:** Fetches detailed component data, including specifications, pricing, and potential alternatives, from the Octopart API.
+- **Cost & Lead Time Analysis:** Provides a clear summary of potential cost savings and lead time improvements when valid alternatives are found.
+- **Robust Caching:** Implements a file-based cache for API calls to improve performance and manage rate limits.
+
+## The "Analyst-in-the-Loop" Architecture
+
+After several iterations, we settled on a sophisticated, tool-calling agent architecture that we call the "Analyst-in-the-Loop". This design provides the best balance of reliability, performance, and intelligent, nuanced reasoning.
+
+The agent's workflow is as follows:
+
+1.  **Conversational Setup:** When a user uploads a BOM, the agent initiates a conversation to gather critical project assumptions (industry, order quantity, etc.).
+2.  **Tool Call 1: `get_bom_data_with_alternatives`:** Once the agent has the necessary assumptions, it calls its first tool. This tool is a Python function that:
+    *   Parses the raw BOM file (CSV, XLS, XLSX).
+    *   Uses an LLM to identify the correct column mapping (e.g., 'MPN', 'Quantity').
+    *   Uses another LLM call for each row to parse it into a structured object.
+    *   Calls the Octopart API to fetch detailed data for the original part and a list of potential `similarParts`.
+    *   Returns a large, structured list of all this raw data back to the agent.
+3.  **Tool Call 2 (in a loop): `evaluate_alternative`:** With the raw data now in its context, the agent begins its core reasoning loop. For each part that has alternatives, it calls the `evaluate_alternative` tool.
+    *   This tool takes the original part, one alternative, and the project assumptions, and sends them to the LLM with a specific prompt asking: "Is this a valid substitute?"
+    *   The LLM returns a structured response: `{"is_valid": boolean, "reasoning": "..."}`.
+4.  **Final Synthesis:** After evaluating all alternatives for all parts, the agent has a complete picture. It then uses one final, comprehensive LLM call to generate a user-facing markdown report, summarizing its findings, explaining its reasoning for each recommendation, and calculating the total potential cost savings.
+
+This "Team of Specialists" approach, where the main agent orchestrates calls to smaller, focused tools, proved to be more reliable and debuggable than a single "Master Craftsman" prompt, especially when dealing with the complexities of external API data and structured outputs.
 
 ## Project Structure
 
-- `frontend/`: Contains the Next.js 15 frontend application.
-  - `src/app/(chat)`: The main chat interface.
-  - `src/components`: Contains the React components, including the chat UI.
-  - `src/lib`: Contains utility functions and the AI SDK setup.
-- `backend/`: Contains the FastAPI (Python 3.12+) backend application.
-  - `app/main.py`: The main FastAPI application, with the `/api/chat` endpoint.
-  - `app/utils`: Contains utility functions for the backend, including prompt engineering and tool definitions.
-- `Makefile`: Provides convenient commands for managing the local development environment.
-- `docker-compose.yml`: Defines the services for both local development and cloud deployment.
+- `frontend/`: The Next.js 15 frontend.
+  - `src/components/chat.tsx`: The main chat interface component, orchestrating the frontend logic.
+  - `src/components/bom-display.tsx`: The component for rendering the final results table.
+- `backend/`: The FastAPI (Python 3.12+) backend.
+  - `app/main.py`: The main FastAPI application, containing the master agent prompt and the primary `/api/chat` endpoint.
+  - `app/bom/logic.py`: Contains all the core functions that are exposed to the agent as "tools" (`get_bom_data_with_alternatives`, `evaluate_alternative`).
+  - `app/bom/octopart_client.py`: The client for interacting with the Nexar/Octopart API.
+  - `app/bom/schemas.py`: Defines all Pydantic models for structured data validation.
+- `Makefile`: Provides convenient commands for managing the development environment.
+- `docker-compose.yml`: Defines the services for local development and deployment.
 
-## Networking and Reverse Proxy
+## Prerequisites & Setup
 
-The application uses [Traefik](httpss://traefik.io/traefik/) as a reverse proxy to manage incoming traffic and route it to the appropriate service. This is configured in the `docker-compose.yml` file.
+### Environment Variables
 
-### Key Configuration Details
+Before running, create a `backend/.env` file with the following content:
 
-- **Entry Point**: The reverse proxy is configured to listen for HTTP traffic on port `8080`. Port 80 is often reserved or blocked on cloud platforms, so 8080 was chosen to ensure reliable access.
-- **Service Routing**:
-  - The **frontend** service is served by default for any requests to the root path (`/`).
-  - The **backend** service is served for any requests to the `/api` path.
-- **Authentication**: The entire application is protected by basic authentication (username/password), which is configured in Traefik.
+```
+# Get your free key from https://developers.generativeai.google.com/
+GEMINI_API_KEY="your_gemini_api_key_here"
 
-This setup allows both the frontend and backend to be served from the same domain and port, simplifying the deployment and access.
-
-## Prerequisites
-
-### For Local Development
-
-- [Docker](https://www.docker.com/get-started)
-- [pnpm](https://pnpm.io/installation)
-- [uv](https://github.com/astral-sh/uv) (Python package manager)
-
-## Backend Configuration
-
-The backend can be configured to use either OpenAI or Azure OpenAI as the provider for chat completions.
-
-### Azure OpenAI Provider (Default)
-
-**Required Environment Variables:**
-
-- `AZURE_OPENAI_ENDPOINT`: The endpoint URL for your Azure OpenAI resource.
-- `AZURE_OPENAI_API_KEY`: Your secret API key for the Azure OpenAI service.
-- `AZURE_OPENAI_DEPLOYMENT`: The name of your model deployment in Azure AI Studio.
-
-### OpenAI Provider
-
-**Required Environment Variables:**
-
-- `OPENAI_API_KEY`: Your secret API key for OpenAI.
-- `OPENAI_MODEL` (optional): The model to use for chat completions (e.g., `gpt-4o`). Defaults to `gpt-4o`.
-
-## Local Development Setup
-
-Follow these steps to set up and run the development environment locally.
-
-### 1. Environment Variables
-
-Create a `.env` file in the root of the project by copying the example file:
-
-```bash
-cp .env.example .env
+# Get your free key from https://octopart.com/api/register
+NEXAR_API_KEY="your_nexar_api_key_here"
 ```
 
-Then, add the required environment variables to the `.env` file based on your chosen provider. See the [Backend Configuration](#backend-configuration) section for details.
+### Installation and Running
 
-### 2. Installation
+This project is managed with `make`.
 
-Install all frontend and backend dependencies using the main `install` command. This will create a virtual environment for the backend in `backend/.venv` and install all necessary packages.
+1.  **Install all dependencies:**
+    ```bash
+    make install
+    ```
+2.  **Run the development servers:**
+    ```bash
+    make backend-run
+    ```
+    In a separate terminal:
+    ```bash
+    make frontend-run
+    ```
 
-```bash
-make install
-```
-
-### 3. Running the Development Servers
-
-You have two options for running the development environment:
-
-**Option 1: Run services locally**
-
-You can run the backend and frontend development servers in separate terminals.
-
-**To run the backend (FastAPI):**
-
-```bash
-make backend-run
-```
-
-The server will be available at `http://127.0.0.1:8000`.
-
-**To run the frontend (Next.js):**
-
-```bash
-make frontend-run
-```
-
-The server will be available at `http://localhost:3000`.
-
-**Option 2: Run services with Docker**
-
-You can also run both services concurrently using Docker.
-
-```bash
-make up
-```
-
-This will start both the backend and frontend services. The frontend will be available at `http://localhost:8080`.
+The application will be available at `http://localhost:3000`.
 
 ## Available Makefile Commands
 
-Here is a summary of the most useful commands defined in the `Makefile`.
-
-### Local Development
-
-- `make install`: Installs all dependencies for both frontend and backend.
-- `make install-backend`: Creates a virtual environment and installs Python dependencies.
-- `make install-frontend`: Installs Node.js dependencies.
-- `make backend-run`: Starts the backend development server.
-- `make frontend-run`: Starts the frontend development server.
-
-### Docker
-
-- `make up`: Start all services in detached mode using Docker Compose with Bake.
-- `make down`: Stop and remove all Docker containers, networks, and volumes.
-- `make logs`: Follow the logs for all running services.
-- `make sh-backend`: Get a shell into the running backend Docker container.
-- `make sh-frontend`: Get a shell into the running frontend Docker container.
+- `make install`: Installs all dependencies.
+- `make backend-run`: Starts the FastAPI backend server.
+- `make frontend-run`: Starts the Next.js frontend server.
+- `make up`: Runs all services with Docker Compose.
+- `make down`: Stops all Docker services.
+- `make logs`: Tails logs from Docker services.
+- `make sh-backend`: Opens a shell into the running backend container.
+- `make sh-frontend`: Opens a shell into the running frontend container.

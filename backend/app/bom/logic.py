@@ -3,11 +3,10 @@ import pandas as pd
 import logging
 import json
 import asyncio
-from typing import List, Dict, Any, Union, Optional
+from typing import List, Dict, Any, Union
 from pathlib import Path
-from openai.types.chat import ParsedChatCompletion
 
-from ..llm import client  # Import client from the new central location
+from ..llm import client
 from .schemas import BomColumnMapping, ParsedBomItem
 from . import octopart_client
 from .router import UPLOAD_DIR
@@ -154,7 +153,6 @@ async def get_column_mapping(df: pd.DataFrame) -> BomColumnMapping:
     try:
         response = await client.chat.completions.create(
             model="gemini-2.5-flash-preview-05-20",
-            # model="o4-mini-2025-04-16",
             response_format={"type": "json_object"},
             messages=[
                 {
@@ -191,7 +189,6 @@ async def _parse_and_enrich_row(
         logger.info(f"Sending row {row_num} to LLM for parsing.")
         response = await client.chat.completions.create(
             model="gemini-2.5-flash-preview-05-20",
-            # model="o4-mini-2025-04-16",
             response_format={"type": "json_object"},
             messages=[
                 {
@@ -205,7 +202,7 @@ async def _parse_and_enrich_row(
         parsed_item = ParsedBomItem.model_validate(response_json)
 
         if parsed_item.manufacturer_part_number:
-            octopart_data = await octopart_client.find_part_by_mpn(
+            octopart_data = await octopart_client.find_alternative_part_by_mpn(
                 parsed_item.manufacturer_part_number, sema
             )
             if octopart_data:
@@ -270,13 +267,8 @@ async def evaluate_alternative(
     TOOL: Compares an original part to a potential alternative using an LLM, based on user-provided assumptions.
     It fetches part data from a server-side cache and returns the validation result along with the simplified data used.
     """
-    # Log the start of the evaluation in a structured, single-line format
-    # to prevent interleaving from concurrent calls.
-
     # Simplify the part data for a much smaller and more focused prompt
     simple_part = process_parts_list(part)
-
-    # Log the data being sent to the LLM for evaluation
 
     prompt = f"""
 # Background information

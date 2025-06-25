@@ -1,4 +1,3 @@
-import os
 import json
 import logging
 from typing import List, Optional, cast
@@ -7,7 +6,6 @@ from pydantic import BaseModel
 from dotenv import load_dotenv
 from fastapi import FastAPI, Query
 from fastapi.responses import StreamingResponse
-from openai import AsyncOpenAI
 from .utils.prompt import ClientMessage, convert_to_openai_messages
 from .bom.router import router as bom_router
 from .bom.logic import get_bom_data_with_alternatives, evaluate_alternative
@@ -26,7 +24,6 @@ app.include_router(bom_router)
 bom_data_cache = {}
 
 model = "gemini-2.5-flash-preview-05-20"
-# model ="o4-mini-2025-04-16"
 
 class Request(BaseModel):
     id: Optional[str] = None

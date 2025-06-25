@@ -167,11 +167,11 @@ export function Chat() {
           } catch {}
 
           return (
-            <PreviewMessage
-              key={message.id}
-              message={message}
-              isLoading={isLoading && messages.length - 1 === index}
-            />
+          <PreviewMessage
+            key={message.id}
+            message={message}
+            isLoading={isLoading && messages.length - 1 === index}
+          />
           )
         })}
 

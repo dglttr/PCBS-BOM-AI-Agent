@@ -7,21 +7,15 @@ from pathlib import Path
 from urllib.parse import quote_plus
 from dotenv import load_dotenv
 
-# Load environment variables from a .env file
 load_dotenv()
 
-# Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# --- Cache Configuration ---
 CACHE_DIR = Path(__file__).parent / ".octopart_cache"
 CACHE_DIR.mkdir(exist_ok=True)
 CACHE_ENABLED = True
 
-# --- Configuration ---
-# The Nexar API key should be stored in an environment variable.
-# You can get a free key from https://octopart.com/api/register
 NEXAR_API_KEY = os.environ.get("NEXAR_API_KEY")
 NEXAR_API_URL = "https://api.nexar.com/graphql"
 
@@ -31,7 +25,7 @@ if not NEXAR_API_KEY:
     )
 
 # --- GraphQL Queries ---
-# This query searches for parts by one or more MPNs.
+# This query searches for alternative parts by one or more MPNs.
 # It retrieves detailed specs, datasheets, and pricing information.
 SEARCH_MPN_QUERY = """
 query findAlternativePart($mpn: String!) {
@@ -99,7 +93,7 @@ query findAlternativePart($mpn: String!) {
 """
 
 
-async def find_part_by_mpn(mpn: str, sema: asyncio.Semaphore):
+async def find_alternative_part_by_mpn(mpn: str, sema: asyncio.Semaphore):
     """
     Queries the Nexar/Octopart API for a specific MPN, with file-based caching.
     """
@@ -175,29 +169,3 @@ async def find_part_by_mpn(mpn: str, sema: asyncio.Semaphore):
             )
 
     return None
-
-
-async def main():
-    """A simple main function for testing the client directly."""
-    logging.info("--- Running Standalone Octopart Client Test ---")
-    test_mpn = "RC0402JR-071RL"  # A common resistor from the test BOM
-
-    if not NEXAR_API_KEY:
-        logger.error("FATAL: NEXAR_API_KEY is not set. Cannot run test.")
-        return
-
-    # A semaphore with a count of 1 is used for this single test call.
-    sema = asyncio.Semaphore(1)
-
-    result = await find_part_by_mpn(test_mpn, sema)
-
-    if result:
-        logger.info(f"Successfully found part for {test_mpn}.")
-        # Pretty-print the JSON result
-        print(json.dumps(result, indent=2))
-    else:
-        logger.error(f"Could not find part for {test_mpn}.")
-
-
-if __name__ == "__main__":
-    asyncio.run(main())

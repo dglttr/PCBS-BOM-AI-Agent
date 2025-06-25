@@ -5,3 +5,4 @@
 deployment_key*
 backend/build
 .vercel
+.octopart_cache
