@@ -19,23 +19,16 @@ import { ArrowUpIcon, PaperclipIcon, StopIcon, CrossIcon } from "./icons";
 import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
 
-const suggestedActions = [
-  {
-    title: "What is the weather",
-    label: "in San Francisco?",
-    action: "What is the weather in San Francisco?",
-  },
-  {
-    title: "How is python useful",
-    label: "for AI engineers?",
-    action: "How is python useful for AI engineers?",
-  },
-];
+const suggestedActions: {
+  title: string;
+  label: string;
+  action: string;
+}[] = [];
 
 interface UploadResult {
-    job_id: string;
-    filename: string;
-    file_path: string;
+  job_id: string;
+  filename: string;
+  file_path: string;
 }
 
 export function MultimodalInput({
@@ -59,13 +52,13 @@ export function MultimodalInput({
   setMessages: Dispatch<SetStateAction<Array<Message>>>;
   append: (
     message: Message | CreateMessage,
-    chatRequestOptions?: ChatRequestOptions,
+    chatRequestOptions?: ChatRequestOptions
   ) => Promise<string | null | undefined>;
   handleSubmit: (
     event?: {
       preventDefault?: () => void;
     },
-    chatRequestOptions?: ChatRequestOptions,
+    chatRequestOptions?: ChatRequestOptions
   ) => void;
   className?: string;
   files: File[];
@@ -84,13 +77,15 @@ export function MultimodalInput({
   const adjustHeight = () => {
     if (textareaRef.current) {
       textareaRef.current.style.height = "auto";
-      textareaRef.current.style.height = `${textareaRef.current.scrollHeight + 2}px`;
+      textareaRef.current.style.height = `${
+        textareaRef.current.scrollHeight + 2
+      }px`;
     }
   };
 
   const [localStorageInput, setLocalStorageInput] = useLocalStorage(
     "input",
-    "",
+    ""
   );
 
   useEffect(() => {
@@ -112,16 +107,16 @@ export function MultimodalInput({
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFiles = event.target.files;
     if (selectedFiles) {
-        const newFiles = Array.from(selectedFiles);
-        if (files.length + newFiles.length > 10) {
-            toast.error("You can upload a maximum of 10 files.");
-            return;
-        }
-        // You might want to check file size for each file here as well
-        setFiles(prev => [...prev, ...newFiles]);
+      const newFiles = Array.from(selectedFiles);
+      if (files.length + newFiles.length > 10) {
+        toast.error("You can upload a maximum of 10 files.");
+        return;
+      }
+      // You might want to check file size for each file here as well
+      setFiles((prev) => [...prev, ...newFiles]);
     }
   };
-  
+
   const handleInput = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInput(event.target.value);
     adjustHeight();
@@ -131,48 +126,48 @@ export function MultimodalInput({
     if (!input && files.length === 0) return;
 
     if (files.length > 0) {
-        const formData = new FormData();
-        files.forEach(f => formData.append("files", f));
+      const formData = new FormData();
+      files.forEach((f) => formData.append("files", f));
 
-        try {
-            const response = await fetch('/api/bom/upload', {
-                method: 'POST',
-                body: formData,
-            });
+      try {
+        const response = await fetch("/api/bom/upload", {
+          method: "POST",
+          body: formData,
+        });
 
-            if (!response.ok) {
-                const errorData = await response.json();
-                toast.error(`File upload failed: ${errorData.detail || 'Unknown error'}`);
-                return;
-            }
-
-            const uploadResults: UploadResult[] = await response.json();
-            
-            const fileListText = files.map(f => f.name).join(', ');
-            const messageData = {
-                text: input || `Processing files: ${fileListText}`,
-                bom_job_ids: uploadResults.map((res) => res.job_id)
-            };
-
-            append({
-                role: 'user',
-                content: JSON.stringify(messageData),
-            });
-
-            setFiles([]);
-            setInput('');
-            setLocalStorageInput("");
-
-        } catch (error) {
-            toast.error("An unexpected error occurred during file upload.");
-            console.error(error);
+        if (!response.ok) {
+          const errorData = await response.json();
+          toast.error(
+            `File upload failed: ${errorData.detail || "Unknown error"}`
+          );
+          return;
         }
-    } else {
-        if (!input) return;
-        handleSubmit(undefined, {});
-        setLocalStorageInput("");
-    }
 
+        const uploadResults: UploadResult[] = await response.json();
+
+        const fileListText = files.map((f) => f.name).join(", ");
+        const messageData = {
+          text: input || `Processing files: ${fileListText}`,
+          bom_job_ids: uploadResults.map((res) => res.job_id),
+        };
+
+        append({
+          role: "user",
+          content: JSON.stringify(messageData),
+        });
+
+        setFiles([]);
+        setInput("");
+        setLocalStorageInput("");
+      } catch (error) {
+        toast.error("An unexpected error occurred during file upload.");
+        console.error(error);
+      }
+    } else {
+      if (!input) return;
+      handleSubmit(undefined, {});
+      setLocalStorageInput("");
+    }
 
     if (width && width > 768) {
       textareaRef.current?.focus();
@@ -214,32 +209,41 @@ export function MultimodalInput({
 
       {files.length > 0 && (
         <div className="flex flex-wrap gap-2 mb-2">
-            {files.map((file, index) => (
-                <div key={index} className="flex items-center gap-2 bg-muted text-sm border rounded-lg px-3 py-1.5">
-                    <PaperclipIcon size={14} />
-                    <span className="flex-1 truncate">{file.name}</span>
-                    <Button
-                        variant="ghost"
-                        size="icon"
-                        className="size-6"
-                        onClick={() => setFiles(prev => prev.filter((_, i) => i !== index))}
-                    >
-                        <CrossIcon size={14} />
-                    </Button>
-                </div>
-            ))}
+          {files.map((file, index) => (
+            <div
+              key={index}
+              className="flex items-center gap-2 bg-muted text-sm border rounded-lg px-3 py-1.5"
+            >
+              <PaperclipIcon size={14} />
+              <span className="flex-1 truncate">{file.name}</span>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="size-6"
+                onClick={() =>
+                  setFiles((prev) => prev.filter((_, i) => i !== index))
+                }
+              >
+                <CrossIcon size={14} />
+              </Button>
+            </div>
+          ))}
         </div>
       )}
 
       <div className="relative">
         <Textarea
           ref={textareaRef}
-          placeholder={files.length > 0 ? "Describe the context for these BOMs..." : "Send a message..."}
+          placeholder={
+            files.length > 0
+              ? "Describe the context for these BOMs..."
+              : "Send a message..."
+          }
           value={input}
           onChange={handleInput}
           className={cn(
             "min-h-[24px] max-h-[calc(75dvh)] overflow-hidden resize-none rounded-xl text-base! bg-muted pl-10",
-            className,
+            className
           )}
           rows={3}
           autoFocus
@@ -248,7 +252,9 @@ export function MultimodalInput({
               event.preventDefault();
 
               if (isLoading) {
-                toast.error("Please wait for the model to finish its response!");
+                toast.error(
+                  "Please wait for the model to finish its response!"
+                );
               } else {
                 submitForm();
               }
