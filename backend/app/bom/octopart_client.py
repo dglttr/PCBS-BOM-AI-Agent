@@ -34,7 +34,7 @@ if not NEXAR_API_KEY:
 # This query searches for parts by one or more MPNs.
 # It retrieves detailed specs, datasheets, and pricing information.
 SEARCH_MPN_QUERY = """
-query findAlternativeParts {
+query findAlternativePart($mpn: String!) {
       #Try changing the mpn from "SY55855VKG" to find alternative parts of your own
       supSearchMpn(
         q: $mpn,

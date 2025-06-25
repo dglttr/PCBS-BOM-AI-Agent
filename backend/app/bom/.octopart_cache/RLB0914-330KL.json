@@ -1,292 +1,4 @@
 {
-  "mpn": "RLB0914-330KL",
-  "manufacturer": {
-    "name": "Bourns"
-  },
-  "shortDescription": "Inductor Power Wirewound 33uH 10% 2.52MHz 40Q-Factor Ferrite 1.7A 0.12Ohm DCR RDL Bag",
-  "octopartUrl": "https://octopart.com/rlb0914-330kl-bourns-1765597",
-  "specs": [
-    {
-      "attribute": {
-        "name": "Case/Package",
-        "shortname": "case_package"
-      },
-      "value": "Radial",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Composition",
-        "shortname": "composition"
-      },
-      "value": "Wirewound",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Contact Plating",
-        "shortname": "contactplating"
-      },
-      "value": "Copper, Tin",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Core Material",
-        "shortname": "corematerial"
-      },
-      "value": "Ferrite",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Current Rating",
-        "shortname": "currentrating"
-      },
-      "value": "1.7",
-      "units": "A"
-    },
-    {
-      "attribute": {
-        "name": "DC Current",
-        "shortname": "dccurrent"
-      },
-      "value": "1.7",
-      "units": "A"
-    },
-    {
-      "attribute": {
-        "name": "DC Resistance (DCR)",
-        "shortname": "dcresistance_dcr_"
-      },
-      "value": "120",
-      "units": "m\u03a9"
-    },
-    {
-      "attribute": {
-        "name": "Diameter",
-        "shortname": "diameter"
-      },
-      "value": "8.7",
-      "units": "mm"
-    },
-    {
-      "attribute": {
-        "name": "Height",
-        "shortname": "height"
-      },
-      "value": "13",
-      "units": "mm"
-    },
-    {
-      "attribute": {
-        "name": "Height - Seated (Max)",
-        "shortname": "height_seated_max_"
-      },
-      "value": "13.0048",
-      "units": "mm"
-    },
-    {
-      "attribute": {
-        "name": "Inductance",
-        "shortname": "inductance"
-      },
-      "value": "33",
-      "units": "\u00b5H"
-    },
-    {
-      "attribute": {
-        "name": "Inductance Tolerance",
-        "shortname": "inductancetolerance"
-      },
-      "value": "10",
-      "units": "%"
-    },
-    {
-      "attribute": {
-        "name": "Lead/Base Style",
-        "shortname": "lead_basestyle"
-      },
-      "value": "Radial",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Lead Diameter",
-        "shortname": "leaddiameter"
-      },
-      "value": "650",
-      "units": "\u00b5m"
-    },
-    {
-      "attribute": {
-        "name": "Lead Pitch",
-        "shortname": "leadpitch"
-      },
-      "value": "5",
-      "units": "mm"
-    },
-    {
-      "attribute": {
-        "name": "Length",
-        "shortname": "length"
-      },
-      "value": "12",
-      "units": "mm"
-    },
-    {
-      "attribute": {
-        "name": "Max DC Current",
-        "shortname": "maxdccurrent"
-      },
-      "value": "1.7",
-      "units": "A"
-    },
-    {
-      "attribute": {
-        "name": "Max Operating Temperature",
-        "shortname": "maxoperatingtemperature"
-      },
-      "value": "105",
-      "units": "\u00b0C"
-    },
-    {
-      "attribute": {
-        "name": "Military Standard",
-        "shortname": "militarystandard"
-      },
-      "value": "Not",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Min Operating Temperature",
-        "shortname": "minoperatingtemperature"
-      },
-      "value": "-40",
-      "units": "\u00b0C"
-    },
-    {
-      "attribute": {
-        "name": "Mount",
-        "shortname": "mount"
-      },
-      "value": "Radial  , Through Hole  ",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Number of Pins",
-        "shortname": "numberofpins"
-      },
-      "value": "2",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Orientation",
-        "shortname": "orientation"
-      },
-      "value": "Vertical",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Packaging",
-        "shortname": "packaging"
-      },
-      "value": "Bulk",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Q Factor",
-        "shortname": "qfactor"
-      },
-      "value": "40",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Radiation Hardening",
-        "shortname": "radiationhardening"
-      },
-      "value": "No",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "REACH SVHC",
-        "shortname": "reachsvhc"
-      },
-      "value": "No",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "RMS Current (Irms)",
-        "shortname": "rmscurrent_irms_"
-      },
-      "value": "1.7",
-      "units": "A"
-    },
-    {
-      "attribute": {
-        "name": "RoHS",
-        "shortname": "rohs"
-      },
-      "value": "Compliant",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Schedule B",
-        "shortname": "scheduleB"
-      },
-      "value": "8504500000",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Self Resonant Frequency",
-        "shortname": "selfresonantfrequency"
-      },
-      "value": "8",
-      "units": "MHz"
-    },
-    {
-      "attribute": {
-        "name": "Shielding",
-        "shortname": "shielding"
-      },
-      "value": "Unshielded",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Termination",
-        "shortname": "termination"
-      },
-      "value": "Radial",
-      "units": ""
-    },
-    {
-      "attribute": {
-        "name": "Test Frequency",
-        "shortname": "testfrequency"
-      },
-      "value": "2.52",
-      "units": "MHz"
-    },
-    {
-      "attribute": {
-        "name": "Tolerance",
-        "shortname": "tolerance"
-      },
-      "value": "10",
-      "units": "%"
-    }
-  ],
   "similarParts": [
     {
       "name": "Taiyo Yuden LHL08TB330K",
@@ -559,7 +271,63 @@
           }
         ]
       },
-      "sellers": [],
+      "sellers": [
+        {
+          "country": "US",
+          "company": {
+            "id": "2412",
+            "name": "Quest"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.174,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 30,
+                  "convertedPrice": 0.145,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 70,
+                  "convertedPrice": 0.116,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 432,
+                  "convertedPrice": 0.0928,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2156,
+                  "convertedPrice": 0.0754,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 7959,
+                  "convertedPrice": 0.0696,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "10597",
+            "name": "Classic Components"
+          },
+          "offers": [
+            {
+              "prices": []
+            }
+          ]
+        }
+      ],
       "estimatedFactoryLeadDays": null
     },
     {
@@ -1324,25 +1092,212 @@
               "prices": [
                 {
                   "quantity": 200,
-                  "convertedPrice": 0.5023121332202564,
+                  "convertedPrice": 0.5022150542024784,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 201,
-                  "convertedPrice": 0.40974512764037174,
+                  "convertedPrice": 0.4096659385228889,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 401,
-                  "convertedPrice": 0.3525713888998548,
+                  "convertedPrice": 0.3525032494266718,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 601,
-                  "convertedPrice": 0.29403637066551597,
+                  "convertedPrice": 0.293979543923402,
                   "convertedCurrency": "USD"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "country": "CN",
+          "company": {
+            "id": "12992",
+            "name": "Suntronic"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.707,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.504,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.343,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.323,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "HK",
+          "company": {
+            "id": "15310",
+            "name": "Fly-Wing Technology"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.4488,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.38368,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.352,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.28486,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "HK",
+          "company": {
+            "id": "15653",
+            "name": "Bettlink"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.4118,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.37436,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.34346,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.2972,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.28038,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "CN",
+          "company": {
+            "id": "12476",
+            "name": "Cytech Systems"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.996,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.9362,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.8864,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.8366,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.7868,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "CN",
+          "company": {
+            "id": "15449",
+            "name": "Origin Data Global Limited"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 50,
+                  "convertedPrice": 0.778,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.722,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.694,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.667,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "10079",
+            "name": "Abacus Technologies"
+          },
+          "offers": [
+            {
+              "prices": []
             }
           ]
         }
@@ -1617,7 +1572,26 @@
           }
         ]
       },
-      "sellers": [],
+      "sellers": [
+        {
+          "country": "MY",
+          "company": {
+            "id": "12830",
+            "name": "Ampacity Systems"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 1.05,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "estimatedFactoryLeadDays": null
     },
     {
@@ -2230,27 +2204,116 @@
               "prices": [
                 {
                   "quantity": 200,
-                  "convertedPrice": 0.44786095346738314,
+                  "convertedPrice": 0.44777439792036694,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 201,
-                  "convertedPrice": 0.42063536359094644,
+                  "convertedPrice": 0.4205540697793112,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 401,
-                  "convertedPrice": 0.3961323327021534,
+                  "convertedPrice": 0.396055774452361,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 601,
-                  "convertedPrice": 0.37571314029482594,
+                  "convertedPrice": 0.37564052834656925,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 801,
-                  "convertedPrice": 0.351210109406033,
+                  "convertedPrice": 0.35114223301961905,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "IT",
+          "company": {
+            "id": "15109",
+            "name": "Aztech"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.67914,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "HK",
+          "company": {
+            "id": "15653",
+            "name": "Bettlink"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.2769,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.25173,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.23094,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.19985,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.18853,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "HK",
+          "company": {
+            "id": "15310",
+            "name": "Fly-Wing Technology"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.4048,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.34672,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.31786,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.25705,
                   "convertedCurrency": "USD"
                 }
               ]
@@ -2827,27 +2890,27 @@
               "prices": [
                 {
                   "quantity": 1000,
-                  "convertedPrice": 0.261365662813792,
+                  "convertedPrice": 0.2613151501541351,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 1001,
-                  "convertedPrice": 0.24503030888792995,
+                  "convertedPrice": 0.24498295326950165,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 2001,
-                  "convertedPrice": 0.23141751394971163,
+                  "convertedPrice": 0.2313727891989738,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 3001,
-                  "convertedPrice": 0.21916599850531512,
+                  "convertedPrice": 0.2191236415354987,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 4001,
-                  "convertedPrice": 0.20419192407327497,
+                  "convertedPrice": 0.20415246105791804,
                   "convertedCurrency": "USD"
                 }
               ]
@@ -3655,22 +3718,22 @@
               "prices": [
                 {
                   "quantity": 2000,
-                  "convertedPrice": 0.10904910341915343,
+                  "convertedPrice": 0.10910973421333041,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 20000,
-                  "convertedPrice": 0.10324861919473037,
+                  "convertedPrice": 0.1033060249466639,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 26000,
-                  "convertedPrice": 0.10208852234984576,
+                  "convertedPrice": 0.1021452830933306,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 50000,
-                  "convertedPrice": 0.0951279412805381,
+                  "convertedPrice": 0.09518083197333078,
                   "convertedCurrency": "USD"
                 }
               ]
@@ -3759,7 +3822,7 @@
               "prices": [
                 {
                   "quantity": 100,
-                  "convertedPrice": 0.13016286599605334,
+                  "convertedPrice": 0.1302352359439965,
                   "convertedCurrency": "USD"
                 },
                 {
@@ -3769,7 +3832,7 @@
                 },
                 {
                   "quantity": 500,
-                  "convertedPrice": 0.11716978133334571,
+                  "convertedPrice": 0.11723492718666353,
                   "convertedCurrency": "USD"
                 },
                 {
@@ -3779,7 +3842,7 @@
                 },
                 {
                   "quantity": 1000,
-                  "convertedPrice": 0.10928112278813036,
+                  "convertedPrice": 0.10934188258399707,
                   "convertedCurrency": "USD"
                 },
                 {
@@ -3802,22 +3865,22 @@
               "prices": [
                 {
                   "quantity": 2000,
-                  "convertedPrice": 0.1533481349790295,
+                  "convertedPrice": 0.15331849825449645,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 2001,
-                  "convertedPrice": 0.12481571678852386,
+                  "convertedPrice": 0.12479159436267004,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 4001,
-                  "convertedPrice": 0.10735050088278976,
+                  "convertedPrice": 0.10732975386018279,
                   "convertedCurrency": "USD"
                 },
                 {
                   "quantity": 6001,
-                  "convertedPrice": 0.08944967553903266,
+                  "convertedPrice": 0.08943238810743864,
                   "convertedCurrency": "USD"
                 }
               ]
@@ -3835,7 +3898,7 @@
               "prices": [
                 {
                   "quantity": 5,
-                  "convertedPrice": 0.15654714178951082,
+                  "convertedPrice": 0.1565168868110705,
                   "convertedCurrency": "USD"
                 }
               ]
@@ -3844,7 +3907,7 @@
               "prices": [
                 {
                   "quantity": 100,
-                  "convertedPrice": 0.15654714178951082,
+                  "convertedPrice": 0.1565168868110705,
                   "convertedCurrency": "USD"
                 }
               ]
@@ -3862,7 +3925,7 @@
               "prices": [
                 {
                   "quantity": 5,
-                  "convertedPrice": 0.15696257887174364,
+                  "convertedPrice": 0.15695510225117346,
                   "convertedCurrency": "USD"
                 }
               ]
@@ -3871,585 +3934,222 @@
               "prices": [
                 {
                   "quantity": 100,
-                  "convertedPrice": 0.15696257887174364,
+                  "convertedPrice": 0.15695510225117346,
                   "convertedCurrency": "USD"
                 }
               ]
             }
           ]
+        },
+        {
+          "country": "CN",
+          "company": {
+            "id": "8706",
+            "name": "Win Source"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 530,
+                  "convertedPrice": 0.1094,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1290,
+                  "convertedPrice": 0.0899,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1995,
+                  "convertedPrice": 0.087,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2745,
+                  "convertedPrice": 0.0842,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 3550,
+                  "convertedPrice": 0.0815,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 4750,
+                  "convertedPrice": 0.073,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "MY",
+          "company": {
+            "id": "12830",
+            "name": "Ampacity Systems"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.058,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "15702",
+            "name": "Tactical IC USA"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 7143,
+                  "convertedPrice": 0.07,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.07,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "HK",
+          "company": {
+            "id": "15653",
+            "name": "Bettlink"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.12112,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.11012,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.10102,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.08743,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.08248,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "CN",
+          "company": {
+            "id": "15251",
+            "name": "Lixinc"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.29,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 2000,
+                  "convertedPrice": 0.09027,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "CN",
+          "company": {
+            "id": "12476",
+            "name": "Cytech Systems"
+          },
+          "offers": [
+            {
+              "prices": [
+                {
+                  "quantity": 1,
+                  "convertedPrice": 0.372,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10,
+                  "convertedPrice": 0.3497,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 100,
+                  "convertedPrice": 0.3311,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 1000,
+                  "convertedPrice": 0.3125,
+                  "convertedCurrency": "USD"
+                },
+                {
+                  "quantity": 10000,
+                  "convertedPrice": 0.2939,
+                  "convertedCurrency": "USD"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "10597",
+            "name": "Classic Components"
+          },
+          "offers": [
+            {
+              "prices": []
+            }
+          ]
+        },
+        {
+          "country": "US",
+          "company": {
+            "id": "13036",
+            "name": "Sourcengine"
+          },
+          "offers": [
+            {
+              "prices": []
+            }
+          ]
         }
       ],
       "estimatedFactoryLeadDays": 98
-    }
-  ],
-  "sellers": [
-    {
-      "company": {
-        "name": "DigiKey"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 998,
-          "prices": [
-            {
-              "price": 0.36,
-              "quantity": 1,
-              "currency": "USD"
-            },
-            {
-              "price": 0.295,
-              "quantity": 10,
-              "currency": "USD"
-            },
-            {
-              "price": 0.2728,
-              "quantity": 25,
-              "currency": "USD"
-            },
-            {
-              "price": 0.2572,
-              "quantity": 50,
-              "currency": "USD"
-            },
-            {
-              "price": 0.22855,
-              "quantity": 200,
-              "currency": "USD"
-            },
-            {
-              "price": 0.21548,
-              "quantity": 400,
-              "currency": "USD"
-            },
-            {
-              "price": 0.20818,
-              "quantity": 600,
-              "currency": "USD"
-            },
-            {
-              "price": 0.19935,
-              "quantity": 1000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.18383,
-              "quantity": 2600,
-              "currency": "USD"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "Avnet"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 69,
-          "prices": [
-            {
-              "price": 0.17,
-              "quantity": 1,
-              "currency": "USD"
-            }
-          ]
-        },
-        {
-          "inventoryLevel": 0,
-          "prices": [
-            {
-              "price": 0.15138,
-              "quantity": 1200,
-              "currency": "USD"
-            },
-            {
-              "price": 0.14898,
-              "quantity": 1600,
-              "currency": "USD"
-            },
-            {
-              "price": 0.14657,
-              "quantity": 2800,
-              "currency": "USD"
-            },
-            {
-              "price": 0.14436,
-              "quantity": 6000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.14362,
-              "quantity": 12000,
-              "currency": "USD"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "Arrow Electronics"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 4000,
-          "prices": [
-            {
-              "price": 0.1865,
-              "quantity": 600,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1808,
-              "quantity": 1000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1656,
-              "quantity": 2600,
-              "currency": "USD"
-            }
-          ]
-        },
-        {
-          "inventoryLevel": 0,
-          "prices": [
-            {
-              "price": 0.1574,
-              "quantity": 1200,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1496,
-              "quantity": 2600,
-              "currency": "USD"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "Verical"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 3588,
-          "prices": [
-            {
-              "price": 0.1867,
-              "quantity": 598,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1809,
-              "quantity": 1000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1658,
-              "quantity": 2600,
-              "currency": "USD"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "Mouser"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 2056,
-          "prices": [
-            {
-              "price": 0.36,
-              "quantity": 1,
-              "currency": "USD"
-            },
-            {
-              "price": 0.295,
-              "quantity": 10,
-              "currency": "USD"
-            },
-            {
-              "price": 0.258,
-              "quantity": 50,
-              "currency": "USD"
-            },
-            {
-              "price": 0.229,
-              "quantity": 100,
-              "currency": "USD"
-            },
-            {
-              "price": 0.2,
-              "quantity": 1000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.183,
-              "quantity": 10000,
-              "currency": "USD"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "Newark"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 69,
-          "prices": [
-            {
-              "price": 0.62,
-              "quantity": 1,
-              "currency": "USD"
-            },
-            {
-              "price": 0.472,
-              "quantity": 10,
-              "currency": "USD"
-            },
-            {
-              "price": 0.431,
-              "quantity": 25,
-              "currency": "USD"
-            },
-            {
-              "price": 0.392,
-              "quantity": 50,
-              "currency": "USD"
-            },
-            {
-              "price": 0.349,
-              "quantity": 100,
-              "currency": "USD"
-            },
-            {
-              "price": 0.311,
-              "quantity": 500,
-              "currency": "USD"
-            },
-            {
-              "price": 0.287,
-              "quantity": 1000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.272,
-              "quantity": 2500,
-              "currency": "USD"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "TME"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 0,
-          "prices": [
-            {
-              "price": 0.548,
-              "quantity": 2,
-              "currency": "USD"
-            },
-            {
-              "price": 0.38,
-              "quantity": 5,
-              "currency": "USD"
-            },
-            {
-              "price": 0.251,
-              "quantity": 10,
-              "currency": "USD"
-            },
-            {
-              "price": 0.232,
-              "quantity": 25,
-              "currency": "USD"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "TTI"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 0,
-          "prices": [
-            {
-              "price": 0.166,
-              "quantity": 1200,
-              "currency": "USD"
-            },
-            {
-              "price": 0.163,
-              "quantity": 2600,
-              "currency": "USD"
-            },
-            {
-              "price": 0.16,
-              "quantity": 5000,
-              "currency": "USD"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "Onlinecomponents.com"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 0,
-          "prices": [
-            {
-              "price": 0.24,
-              "quantity": 200,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1875,
-              "quantity": 1000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1791,
-              "quantity": 2600,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1739,
-              "quantity": 5000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.169,
-              "quantity": 7600,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1579,
-              "quantity": 25000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1538,
-              "quantity": 50000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1515,
-              "quantity": 100000,
-              "currency": "USD"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "Master Electronics"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 0,
-          "prices": [
-            {
-              "price": 0.24,
-              "quantity": 200,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1875,
-              "quantity": 1000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1791,
-              "quantity": 2600,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1739,
-              "quantity": 5000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.169,
-              "quantity": 7600,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1579,
-              "quantity": 25000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1538,
-              "quantity": 50000,
-              "currency": "USD"
-            },
-            {
-              "price": 0.1515,
-              "quantity": 100000,
-              "currency": "USD"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "TTI Europe"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 0,
-          "prices": [
-            {
-              "price": 0.141,
-              "quantity": 1200,
-              "currency": "EUR"
-            },
-            {
-              "price": 0.138,
-              "quantity": 2600,
-              "currency": "EUR"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "element14 APAC"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 1157,
-          "prices": [
-            {
-              "price": 0.544,
-              "quantity": 1,
-              "currency": "SGD"
-            },
-            {
-              "price": 0.398,
-              "quantity": 5,
-              "currency": "SGD"
-            },
-            {
-              "price": 0.252,
-              "quantity": 10,
-              "currency": "SGD"
-            },
-            {
-              "price": 0.247,
-              "quantity": 25,
-              "currency": "SGD"
-            },
-            {
-              "price": 0.242,
-              "quantity": 50,
-              "currency": "SGD"
-            },
-            {
-              "price": 0.237,
-              "quantity": 200,
-              "currency": "SGD"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "Farnell"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 1157,
-          "prices": [
-            {
-              "price": 0.353,
-              "quantity": 1,
-              "currency": "GBP"
-            },
-            {
-              "price": 0.326,
-              "quantity": 5,
-              "currency": "GBP"
-            },
-            {
-              "price": 0.298,
-              "quantity": 10,
-              "currency": "GBP"
-            },
-            {
-              "price": 0.274,
-              "quantity": 25,
-              "currency": "GBP"
-            },
-            {
-              "price": 0.243,
-              "quantity": 50,
-              "currency": "GBP"
-            },
-            {
-              "price": 0.211,
-              "quantity": 200,
-              "currency": "GBP"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company": {
-        "name": "Anglia"
-      },
-      "offers": [
-        {
-          "inventoryLevel": 0,
-          "prices": [
-            {
-              "price": 0.21143,
-              "quantity": 200,
-              "currency": "GBP"
-            },
-            {
-              "price": 0.1721,
-              "quantity": 201,
-              "currency": "GBP"
-            },
-            {
-              "price": 0.148,
-              "quantity": 401,
-              "currency": "GBP"
-            },
-            {
-              "price": 0.12334,
-              "quantity": 601,
-              "currency": "GBP"
-            }
-          ]
-        }
-      ]
     }
   ]
 }

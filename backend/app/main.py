@@ -45,19 +45,18 @@ You are "B.O.M.B.A.", an expert manufacturing analyst. Your goal is to help the 
 1.  **Acknowledge and Question:** When the user uploads a file, they will provide a `job_id`. Acknowledge the file and begin a friendly conversation to gather project requirements. Do NOT mention the `job_id`. You MUST ask for:
     *   The project's industry (e.g., Automotive, Consumer Electronics).
     *   The total order quantity for this production run.
-    *   Any other critical performance requirements.
+    *   Any other critical performance requirements but only if necessary and cannot be inferred from the project's industry. Take the knowledge base into account.
 
 2.  **Get the Data:** Once you have the assumptions, call the `get_bom_data_with_alternatives` tool, passing only the `job_id`.
 
-3.  **Synthesize and Recommend:** A Python function will automatically evaluate all alternatives and provide you with a structured list of evaluation bundles. Each bundle contains the simplified original part, the simplified alternative part, and the validation result. Your final task is to synthesize all this information into a single, comprehensive summary for the user.
-    *   Start with a friendly, conversational summary.
-    *   For each part in the BOM for which you have evaluation results:
-        *   Clearly state the original part's details.
-        *   Summarize the evaluation findings for its alternatives. Make intelligent trade-offs between specs, price, and availability based on the validation results.
-        *   State your final recommendation (either the original part or the best alternative).
-        *   Provide clear, concise reasoning for your choice.
-    *   Conclude with an overall summary of potential cost savings.
-    *   **If a tool returns an error, do not proceed with the analysis.** Apologize to the user, state the error message you received, and ask them to verify their file or input.
+3.  **Synthesize and Recommend:** A Python function will automatically evaluate all alternatives and provide you with a structured output of evaluation. You should return that output exactly without making any changes for every component in the BOM.
+    
+# Knowledge base
+Use this knowledge base to help you make your decision:
+## Special Industry Requirements for the Automotive Industry:
+- RoHS compliant
+- Should be lead free
+- Should be able to handle temperatures between -55 °C to +85 °C    
 """
 
 async def stream_text(messages: List[ChatCompletionMessageParam], protocol: str = "data"):
@@ -133,24 +132,17 @@ async def stream_text(messages: List[ChatCompletionMessageParam], protocol: str 
             # 2. Create evaluation tasks for all alternatives
             evaluation_tasks = []
             for part in summary:
-                if part.get("has_alternatives") == "Yes":
-                    original_mpn = part.get("manufacturer_part_number")
-                    if not original_mpn:
-                        continue
-                    for alt_mpn in part.get("alternatives", []):
-                        evaluation_tasks.append(
-                            evaluate_alternative(
-                                job_id=job_id,
-                                original_mpn=original_mpn,
-                                alternative_mpn=alt_mpn,
-                                assumptions=assumptions,
-                                cache=bom_data_cache
-                            )
-                        )
-            
+                evaluation_tasks.append(
+                    evaluate_alternative(
+                        part=part,
+                        assumptions=assumptions,
+                    )
+                )
+                        
             # 3. Run all evaluations concurrently
             logging.info(f"Starting concurrent evaluation of {len(evaluation_tasks)} alternatives...")
-            evaluation_results = await asyncio.gather(*evaluation_tasks, return_exceptions=True)
+            evaluation_results = await asyncio.gather(*evaluation_tasks)
+            
             logging.info("All evaluations complete.")
 
             # 4. Add all evaluation results as a single tool message to the conversation history
@@ -158,9 +150,8 @@ async def stream_text(messages: List[ChatCompletionMessageParam], protocol: str 
                 "role": "tool",
                 "tool_call_id": tool_calls[0].id,
                 "content": json.dumps([
-                    res if not isinstance(res, BaseException) else {"error": str(res)} 
-                    for res in evaluation_results
-                ]),
+                    str(res) for res in evaluation_results
+                ])
             })
             
             # 5. Final synthesis call to the LLM
