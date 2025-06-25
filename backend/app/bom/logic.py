@@ -354,11 +354,9 @@ It should have the following columns:
 - Rank: Checkmark (✅) for the chosen component, numbering for the alternatives (1 for the best alternative, 2 for the second best, etc.)
 - Component Name
 - Manufacturer
-- Manufacturer lead time
 - Best price (both unit price and total price for the target quantity) - behind the price, there should be a traffic light emoji (green 🟢, yellow 🟡, red 🔴) indicating how good the price is relative to the other alternatives
 - Name of seller and country
 - Expected supplier reliability (based on the information in the knowledge base, the seller country and the number of sellers) - this should be a traffic light emoji (green 🟢, yellow 🟡, red 🔴)
-- Total number of sellers
 - One column for each of the relevant attributes, such as capacitance, voltage rating, etc. (you can choose which attributes to include based on the JSON file).
 
 Below the table, provide a brief explanation of why you ranked the alternatives as you did, focusing on the most important attributes and their relevance to the project requirements.

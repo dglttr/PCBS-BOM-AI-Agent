@@ -193,4 +193,6 @@ async def handle_chat_data(request: Request, protocol: str = Query("data")):
         except (json.JSONDecodeError, TypeError):
             pass # Not a BOM request, proceed normally
 
-    return StreamingResponse(stream_text(openai_messages, protocol))
+    response = StreamingResponse(stream_text(openai_messages, protocol))
+    response.headers["x-vercel-ai-data-stream"] = "v1"
+    return response

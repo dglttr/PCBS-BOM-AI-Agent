@@ -2,6 +2,14 @@ import Link from "next/link";
 import React, { memo } from "react";
 import ReactMarkdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
 const NonMemoizedMarkdown = ({ children }: { children: string }) => {
   const components: Partial<Components> = {
@@ -108,6 +116,20 @@ const NonMemoizedMarkdown = ({ children }: { children: string }) => {
         </h6>
       );
     },
+    table: ({ children, ...props }) => (
+      <div className="my-6 w-full overflow-y-auto">
+        <Table {...props}>{children}</Table>
+      </div>
+    ),
+    thead: ({ children, ...props }) => (
+      <TableHeader {...props}>{children}</TableHeader>
+    ),
+    tbody: ({ children, ...props }) => (
+      <TableBody {...props}>{children}</TableBody>
+    ),
+    tr: ({ children, ...props }) => <TableRow {...props}>{children}</TableRow>,
+    th: ({ children, ...props }) => <TableHead {...props}>{children}</TableHead>,
+    td: ({ children, ...props }) => <TableCell {...props}>{children}</TableCell>,
   };
 
   return (
