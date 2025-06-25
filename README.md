@@ -1,4 +1,4 @@
-# Conversational BOM Analyst
+# PCBS-BOM-AI-Agent
 
 This repository contains an advanced, conversational AI agent designed to assist with the procurement and analysis of electronic components for manufacturing. The agent, named **B.O.M.B.A.** (BOM Processing and Management Bot Assistant), intelligently processes Bill of Materials (BOM) files, finds cost-saving alternatives, and presents its findings in a clear, human-readable report.
 
