@@ -14,6 +14,31 @@ logger = logging.getLogger(__name__)
 # Global storage for production plans
 production_plans_cache: Dict[str, Any] = {}
 
+MODEL = "gemini-2.5-flash-preview-04-17"
+
+tools = [
+                {
+                    "type": "function",
+                    "function": {
+                        "name": "get_weekday_names",
+                        "description": "Gets the weekday name for each date.",
+                        "parameters": {
+                            "type": "object",
+                            "properties": {
+                                "dates": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    },
+                                    "description": "List of dates to check in YYYY-MM-DD format."
+                                }
+                            },
+                            "required": ["dates"]
+                        }
+                    }
+                }
+            ]
+
 async def optimize_production_plan(
     job_id: str,
     current_stock: int = 0,
@@ -102,30 +127,9 @@ The scrap rate is {scrap_rate*100:.2f}%.
 
         # Call the LLM to process the production plan
         response = await client.chat.completions.create(
-            model="gemini-2.5-flash",
+            model=MODEL,
             messages=conversation_history,
-            tools=[
-                {
-                    "type": "function",
-                    "function": {
-                        "name": "get_weekday_names",
-                        "description": "Gets the weekday name for each date.",
-                        "parameters": {
-                            "type": "object",
-                            "properties": {
-                                "dates": {
-                                    "type": "array",
-                                    "items": {
-                                        "type": "string"
-                                    },
-                                    "description": "List of dates to check in YYYY-MM-DD format."
-                                }
-                            },
-                            "required": ["dates"]
-                        }
-                    }
-                }
-            ],
+            tools=tools,
             stream=False,    # need full response to check for tool calls
             tool_choice="required",
             #reasoning_effort="low"
@@ -162,29 +166,30 @@ The scrap rate is {scrap_rate*100:.2f}%.
                     })
                 else:
                     logging.info(f"Unknown tool call in optimize_production_plan: {tool_call.function.name}")
-            
-        else:
-            logging.info(f"No tool call inside optimize_production_plan")
-            yield ProductionPlanChunk(text=message.content or "")
-            return
-        
-        # Make a final call to get the complete response
-        logging.info(f"Final synthesis LLM call inside optimize_production_plan with conversation history: {conversation_history}")
 
-        # Get the final response with streaming enabled
-        final_response_stream = await client.chat.completions.create(
-            model="gemini-2.5-flash",
-            messages=conversation_history,
-            stream=True,
-            #reasoning_effort="low"
-        )
-        
-        # Stream the chunks directly
-        async for chunk in final_response_stream:
-            if chunk.choices[0].delta.content:
-                yield ProductionPlanChunk(text=chunk.choices[0].delta.content)
-        
-        logging.info(f"Final synthesis completed successfully")
+            
+            # Make a final call to get the complete response
+            logging.info(f"Final synthesis LLM call inside optimize_production_plan with conversation history: {conversation_history}")
+
+            # Get the final response with streaming enabled
+            final_response_stream = await client.chat.completions.create(
+                model=MODEL,
+                messages=conversation_history,
+                stream=True,
+                #reasoning_effort="low"
+            )
+            
+            # Stream the chunks directly
+            async for chunk in final_response_stream:
+                if chunk.choices[0].delta.content:
+                    yield ProductionPlanChunk(text=chunk.choices[0].delta.content)
+            
+            logging.info(f"Final synthesis completed successfully")
+        else:
+            # If there are no tool calls, directly stream the initial response
+            logging.info(f"No tool calls detected, returning initial response")
+            if message.content:
+                yield ProductionPlanChunk(text=message.content)
     
     except Exception as e:
         logger.error(f"Error when optimizing production plan: {e}", exc_info=True)
