@@ -37,7 +37,7 @@ backend-run: ## Run backend dev server
 	@cd backend && uv run fastapi dev app/main.py
 
 frontend-run: ## Run frontend dev server
-	pnpm --filter frontend dev
+	@cd frontend && npm run dev
 
 
 # ==============================================================================
@@ -57,4 +57,4 @@ install-backend: venv-backend ## Install backend dependencies
 # ==============================================================================
 install-frontend: ## Install frontend dependencies
 	@echo "Installing frontend dependencies from frontend/package.json..."
-	@cd frontend && pnpm install
+	@cd frontend && npm install

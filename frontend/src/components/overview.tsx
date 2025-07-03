@@ -15,9 +15,8 @@ export const Overview = () => {
       transition={{ delay: 0.5 }}
     >
       <div className="rounded-xl p-6 flex flex-col gap-8 leading-relaxed text-center max-w-xl">
-        <p>
-          Welcome to B.O.M.B.A., your AI-powered Bill of Materials (BOM) analyzer. Please upload a BOM file to get started.
-        </p>
+        <p style={{ fontSize: "1.5rem" }}>Welcome to the<br /><b>Production Planning Assistant!</b></p>
+        <p>Please upload a production plan CSV file to get started.</p>
       </div>
     </motion.div>
   );

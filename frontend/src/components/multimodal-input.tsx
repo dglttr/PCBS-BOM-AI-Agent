@@ -27,8 +27,7 @@ const suggestedActions: {
 
 interface UploadResult {
   job_id: string;
-  filename: string;
-  file_path: string;
+  message: string;
 }
 
 export function MultimodalInput({
@@ -112,7 +111,20 @@ export function MultimodalInput({
         toast.error("You can upload a maximum of 10 files.");
         return;
       }
-      // You might want to check file size for each file here as well
+      
+      // Validate file types - accept both text/csv and files with .csv extension
+      const invalidFiles = newFiles.filter(file => {
+        const isCSV = file.type === "text/csv" || file.name.toLowerCase().endsWith('.csv');
+        console.log("File validation:", file.name, file.type, isCSV);
+        return !isCSV;
+      });
+      
+      if (invalidFiles.length > 0) {
+        toast.error("Only CSV files are allowed.");
+        return;
+      }
+      
+      console.log("Files added:", newFiles.map(f => f.name).join(', '));
       setFiles((prev) => [...prev, ...newFiles]);
     }
   };
@@ -126,39 +138,70 @@ export function MultimodalInput({
     if (!input && files.length === 0) return;
 
     if (files.length > 0) {
+      console.log("Submitting files:", files.map(f => `${f.name} (${f.type})`).join(', '));
       const formData = new FormData();
-      files.forEach((f) => formData.append("files", f));
+      formData.append("file", files[0]);
 
       try {
-        const response = await fetch("/api/bom/upload", {
+        console.log("Sending file to API:", files[0].name);
+        const response = await fetch("/api/production/upload", {
           method: "POST",
           body: formData,
         });
 
         if (!response.ok) {
           const errorData = await response.json();
+          console.error("File upload failed:", errorData);
           toast.error(
             `File upload failed: ${errorData.detail || "Unknown error"}`
           );
           return;
         }
 
-        const uploadResults: UploadResult[] = await response.json();
+        const uploadResults: UploadResult = await response.json();
+        console.log("Upload successful:", uploadResults);
 
-        const fileListText = files.map((f) => f.name).join(", ");
-        const messageData = {
-          text: input || `Processing files: ${fileListText}`,
-          bom_job_ids: uploadResults.map((res) => res.job_id),
+        // Read the CSV file to display its content
+        const reader = new FileReader();
+        reader.onload = async (e) => {
+          const csvContent = e.target?.result as string;
+          
+          // Format CSV content as a markdown table
+          const rows = csvContent.split('\n');
+          const headers = rows[0].split(',').map(header => header.trim());
+          
+          let markdownTable = '| ' + headers.join(' | ') + ' |\n';
+          markdownTable += '| ' + headers.map(() => '---').join(' | ') + ' |\n';
+          
+          // Add up to 10 rows max to avoid huge messages
+          const dataRows = rows.slice(1, Math.min(11, rows.length));
+          dataRows.forEach(row => {
+            if (row.trim()) {
+              markdownTable += '| ' + row.split(',').map(cell => cell.trim()).join(' | ') + ' |\n';
+            }
+          });
+          
+          if (rows.length > 11) {
+            markdownTable += '*...and ' + (rows.length - 11) + ' more rows*';
+          }
+
+          // Store the job_id in a hidden format but display a clean message with the table
+          const messageData = {
+            production_plan_job_id: uploadResults.job_id,
+            text: `✅ *CSV file uploaded (preview below)*` + "\n" + markdownTable + "\n\n" + input
+          };
+
+          append({
+            role: "user",
+            content: JSON.stringify(messageData),
+          });
+
+          setFiles([]);
+          setInput("");
+          setLocalStorageInput("");
         };
-
-        append({
-          role: "user",
-          content: JSON.stringify(messageData),
-        });
-
-        setFiles([]);
-        setInput("");
-        setLocalStorageInput("");
+        
+        reader.readAsText(files[0]);
       } catch (error) {
         toast.error("An unexpected error occurred during file upload.");
         console.error(error);
@@ -172,7 +215,7 @@ export function MultimodalInput({
     if (width && width > 768) {
       textareaRef.current?.focus();
     }
-  }, [handleSubmit, setLocalStorageInput, width, append, input, files]);
+  }, [files, input, append, handleSubmit, setLocalStorageInput, width]);
 
   return (
     <div className="relative w-full flex flex-col gap-4">
@@ -236,7 +279,7 @@ export function MultimodalInput({
           ref={textareaRef}
           placeholder={
             files.length > 0
-              ? "Describe the context for these BOMs..."
+              ? "Describe the context for this production plan..."
               : "Send a message..."
           }
           value={input}
@@ -267,7 +310,7 @@ export function MultimodalInput({
           ref={fileInputRef}
           onChange={handleFileChange}
           className="hidden"
-          accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel"
+          accept=".csv,text/csv"
           multiple
         />
 
@@ -275,7 +318,15 @@ export function MultimodalInput({
           variant="ghost"
           size="icon"
           className="absolute bottom-2 left-2 m-0.5"
-          onClick={() => fileInputRef.current?.click()}
+          onClick={(e) => {
+            e.preventDefault();
+            console.log("Paperclip clicked, opening file selector");
+            if (fileInputRef.current) {
+              fileInputRef.current.click();
+            } else {
+              console.error("File input reference is null");
+            }
+          }}
           disabled={isLoading || files.length >= 10}
         >
           <PaperclipIcon />

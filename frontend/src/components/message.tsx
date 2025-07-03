@@ -88,8 +88,10 @@ export const PreviewMessage = ({
   );
 };
 
-export const ThinkingMessage = () => {
+export const ThinkingMessage = ({ toolName }: { toolName?: string } = {}) => {
   const role = "assistant";
+
+  console.log("ThinkingMessage - toolName:", toolName);
 
   return (
     <motion.div
@@ -112,7 +114,7 @@ export const ThinkingMessage = () => {
 
         <div className="flex flex-col gap-2 w-full">
           <div className="flex flex-col gap-4 text-muted-foreground">
-            Thinking...
+            {toolName === "optimize_production_plan" ? "Optimizing production plan..." : "Thinking..."}
           </div>
         </div>
       </div>
