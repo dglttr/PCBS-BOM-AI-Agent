@@ -126,6 +126,11 @@ export function MultimodalInput({
       
       console.log("Files added:", newFiles.map(f => f.name).join(', '));
       setFiles((prev) => [...prev, ...newFiles]);
+      
+      // Focus on textarea after files are selected
+      setTimeout(() => {
+        textareaRef.current?.focus();
+      }, 0);
     }
   };
 
